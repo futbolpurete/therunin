@@ -1,0 +1,1728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="The Run In">
+<meta name="theme-color" content="#0E1620">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAEqklEQVR4nK1WW2yUVRCeOf/5b9vdLrtsKUSKVVnYXigXEyMCaqoBo/F+x4i88KA+aEQSDIQYE6KJwagEIzwYJUT0gcQHIgkRBWIAizYViwqUAq1AF7Iu2+3u/tcZH7rd7tbVp39yHv5zcv5vzsx8852DkRmt0ZCiq4KZIThDRNul0aIvoyFlWXvj5YwtBQblAQFcn2dP14+fyUtdFZczzo/9eUMXFJAHgWBZtLQDdFVIBpAKGoYS0jBABwCoSmQACYDMQAzEgTkAAGJmRgCUCFA9ArFqQAmIkyMoQ6hgyrobFEWpnhJRNYmFEFh9GmZi/i+Wy39niJlzo/nKD4ioaappGMxMRIiiWLJs2xEIPOEvZJqqKn2fpkQBgLI6QwjAzJqmrlh+n6aqPhEw245zaWh4YGBQ1zXDNKyStWhh59xbW23HGz/E2Fi+79f+v7PZSDhMRAA1gDURIKLnubFY+LNdnyTiEQAQAARw7Xr2+8NHt7zzbjp9rViyXlz93Kvr1tg+6AoAgEtwfvDiGxs2HfrhSHjCRyUfdWrAzPl83jT1S0PD6ZF0oqkpNT+5+ulHu7o6H3vqhQvnzlmW7fn+1ZFMb28fANy+ZNH8ua07tm+7u/vBXC4npQTgCiNFORIU1XRi4Iip7d7z9f0rH+5e9cjr69+6ns13zr9tw/rXyC4JRUhFyWQya9e98uTjz27c/HbJ8ZpnzFi8qKtoWUJRJjiJgCjqlr7MJSFQ1RQhPt2x89sDB5n5nhXLjFiT63rl8KUETTMMY7zcxWJJoIBaOslq0lZ9lNOIAKqqypDZd6r/peefiDZG4vEYkw/Ms2Y27/vqC/Kpo6MtpMvvjhw/+UtvONxAzAIQQYxDyQpWGbaqoYUQBMIh9ByaFk8Aou1xbsxiVAFRqEbXwiWNEdUqubs+37v1vW1EJKVk5mrmi9o+qOmJsUJJUiGq5OfOaVx5V6p046/rl35LaIWoWrBylwf7j23a8HIhe01Xld6+U0MXhxpCDUQ8BUdO7TMsE8l2vFRb+8db1izvjNsexP1T6f7TPQcOrl05a7by5/DPX6qjYwnr5E8Hd3c/8+bmjesPHT565cqIaRjEVIOZbOvsXrEk1JxKtLRNb2mPzEze0nlnOjPqcdl8ZmYuurxp60dm0zzQZ324cw8zn7mY1hPJrqWrMrkCM+/dt1+P35yY0xGf3ZZoaQs1p+5dvjjVsWBqHwhE3/WOn+hpjDY6joMAruOcHRjY983+npO9sdg09rUL588eO9FzbnA4Hg398fvp9z/Y/tAD3bHYtNS85PnBC7quA0wSCZPtC1oS6omzpckLh9l23Mom8sl2HF3Xwg0NPhECuK7nep4QqGs6CiyVLGZGRNM0mBgQBELR4TuS5kjWq6emiIahV80wIsJE7BMBAAOomqrp2kQKORQyx8tW5k+t1VFTgJpeYWYqh1aRW5jQWgQAmrwIp8DXU9NArLpv60cQlCOA/9WiQExWZC/oO7k8JNauBI0PEgARQUEUwUUgylo6ziIBLkHBYUYI8GVXcNj1AQVIx4Wb4uqyFAT++G1JqFezHk5vXRhrELpE4sDKzAwCwfb4RoH+Ace6KJ+kdpFxAAAAAElFTkSuQmCC" sizes="32x32">
+<title>The Run In</title>
+<style>
+  :root {
+    /* ---- "Under the Lights" — Sky Sports-inspired navy/blue/red re-skin ---- */
+    --bg: #060B18;
+    --surface: #101A33;
+    --surface-2: #040810;
+    --ink: #F2F4F8;
+    --ink-soft: #9CA9C7;
+    --ink-faint: #7885A3;
+    --border: #16213D;
+    --border-strong: #26355C;
+    --accent: #4C8CFF;
+    --accent-bright: #7FB0FF;
+    --accent-fill: #1957D6;
+    --accent-ink: #F5F7FB;
+    --danger: #E5352A;
+    --danger-bg: rgba(229,53,42,0.14);
+    --safe: #57B06B;
+    --safe-bg: rgba(87,176,107,0.12);
+    --zone: #E5352A;
+    --zone-bg: rgba(229,53,42,0.16);
+    --rule: #16213D;
+    --live: #E5352A;
+    --pitch: #16301F;
+    --pitch-line: rgba(238,242,246,0.22);
+    --role-def: #5F93D8;
+    --role-mid: #6B7C8C;
+    --font-display: 'Anton', 'Arial Narrow', sans-serif;
+    --font-body: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: 0.001ms !important; animation-duration: 0.001ms !important; } }
+
+  body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  html { background: var(--bg); -webkit-text-size-adjust: 100%; }
+  body { touch-action: manipulation; overscroll-behavior-y: contain; -webkit-tap-highlight-color: transparent; }
+  button { -webkit-tap-highlight-color: transparent; -webkit-user-select: none; user-select: none; touch-action: manipulation; }
+  .page {
+    max-width: 560px; margin: 0 auto;
+    padding-top: max(18px, env(safe-area-inset-top));
+    padding-right: max(16px, env(safe-area-inset-right));
+    padding-bottom: max(70px, env(safe-area-inset-bottom));
+    padding-left: max(16px, env(safe-area-inset-left));
+  }
+  h1, h2, h3, button { font-family: var(--font-display); font-weight: 400; letter-spacing: 0.01em; text-transform: uppercase; }
+  p { margin: 0 0 0.9em; }
+  button { cursor: pointer; }
+  [hidden] { display: none !important; }
+
+  /* ---- top bar: wordmark + tapering brass swoosh ---- */
+  .topbar { position: relative; display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; padding: 8px 0 11px; margin-bottom: 15px; }
+  .topbar::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 2px;
+    background: linear-gradient(90deg, var(--accent-bright) 0%, var(--accent) 22%, var(--border-strong) 58%, transparent 88%); }
+  .brand { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+  .brand .mark-row { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .brand .mark { font-size: 18.5px; font-weight: 700; font-style: italic; letter-spacing: 0.005em; color: var(--accent-bright); line-height: 1.05; white-space: nowrap; }
+  .brand .day-badge { font-family: var(--font-mono); font-size: 10px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); padding: 2px 6px; white-space: nowrap; }
+  .brand .wt { font-size: 8.5px; font-weight: 600; color: var(--accent); letter-spacing: 0.14em; background: none; padding: 0; }
+  .rules-btn { background: transparent; border: 1px solid var(--border-strong); border-radius: 0; color: var(--ink-soft); font-size: 9.5px; letter-spacing: 0.05em; padding: 7px 9px; min-height: 34px; white-space: nowrap; }
+  .rules-btn:hover { border-color: var(--accent); color: var(--accent-bright); }
+  .topbar-actions { display: flex; gap: 6px; flex-shrink: 0; }
+  .reset-btn { border-style: dashed; color: var(--ink-faint); }
+  .reset-btn:hover { border-color: var(--danger); color: var(--danger); }
+
+  /* Club/Points/Games-left need to stay on one row (that's the point of moving Day up
+     into the topbar) — a tighter gap than before buys the margin that keeps them there
+     down to iPhone SE width. */
+  .club-strip { display: flex; flex-wrap: wrap; gap: 12px 14px; align-items: flex-start; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
+  .chip { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+  .chip .k { font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); }
+  .chip strong { font-family: var(--font-mono); font-size: 15px; font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; display: flex; align-items: center; text-transform: none; letter-spacing: 0; white-space: nowrap; }
+  .kit-dot { width: 8px; height: 8px; border-radius: 0; display: inline-block; margin-right: 6px; flex-shrink: 0; }
+  .chip .delta { font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--safe); margin-left: 7px; opacity: 0; transform: translateY(2px); display: inline-block; }
+  .chip .delta.show { animation: deltaPop 1.7s ease forwards; }
+  @keyframes deltaPop { 0% { opacity: 0; transform: translateY(2px); } 14% { opacity: 1; transform: translateY(-2px); } 78% { opacity: 1; transform: translateY(-2px); } 100% { opacity: 0; transform: translateY(-7px); } }
+
+  /* ---- modal sheets: rules panel + in-play decision box share this bottom-sheet treatment ---- */
+  .sheet-scrim { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 49; opacity: 0; pointer-events: none; transition: opacity 0.28s ease; }
+  .sheet-scrim.show { opacity: 1; pointer-events: auto; }
+  .sheet { position: fixed; left: 0; right: 0; bottom: 0; margin: 0 auto; max-width: 560px; max-height: 76vh; overflow-y: auto; overflow-x: hidden; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; border-top: 2px solid var(--accent-bright); border-radius: 0; padding: 14px 16px calc(16px + env(safe-area-inset-bottom, 0px)); background: var(--surface-2); box-shadow: 0 -12px 28px rgba(0,0,0,0.45); z-index: 50; transform: translateY(100%); transition: transform 0.32s cubic-bezier(.2,.8,.2,1); }
+  .sheet.open { transform: translateY(0); }
+  .sheet-handle { width: 36px; height: 4px; background: var(--border-strong); margin: 0 auto 12px; }
+  details.disclosure > summary { cursor: pointer; list-style: none; font-family: var(--font-display); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); padding: 6px 0; user-select: none; }
+  details.disclosure > summary::-webkit-details-marker { display: none; }
+  details.disclosure > summary::before { content: '▸ '; display: inline-block; transition: transform .15s ease; }
+  details.disclosure[open] > summary::before { transform: rotate(90deg); }
+
+  /* ---- rules panel ---- */
+  .rules-panel { font-size: 13.5px; }
+  .rules-panel .rules-summary { font-family: var(--font-body); font-size: 13.5px; font-weight: 400; text-transform: none; letter-spacing: normal; color: var(--ink-soft); margin: 0 0 2px; }
+  .rules-panel h3 { font-size: 12px; color: var(--accent); margin: 14px 0 5px; }
+  .rules-panel h3:first-of-type { margin-top: 0; }
+  .rules-panel ul { margin: 0 0 4px; padding-left: 16px; color: var(--ink-soft); font-family: var(--font-body); text-transform: none; font-weight: 400; letter-spacing: normal; }
+  .rules-panel li { margin-bottom: 4px; }
+  .rules-panel strong { color: var(--ink); }
+
+  /* ---- screens / panels ---- */
+  .screen:not([hidden]) { animation: screenIn 0.4s cubic-bezier(.2,.8,.2,1); }
+  @keyframes screenIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .screen h2.big { font-size: 27px; margin: 0 0 6px; text-wrap: balance; }
+  .lede { font-family: var(--font-body); font-size: 15.5px; text-transform: none; letter-spacing: normal; font-weight: 400; color: var(--ink-soft); margin-bottom: 18px; }
+
+  .card { border-top: 1px solid var(--border); padding: 16px 0 4px; margin-bottom: 16px; }
+  .card-label { font-family: var(--font-display); font-size: 10.5px; letter-spacing: 0.11em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 10px; font-weight: 600; }
+
+  .table-wrap { overflow-x: auto; }
+  table.league tbody tr { animation: rowIn 0.32s cubic-bezier(.2,.8,.2,1) both; }
+  table.league tbody tr:nth-child(1) { animation-delay: 0ms; }
+  table.league tbody tr:nth-child(2) { animation-delay: 45ms; }
+  table.league tbody tr:nth-child(3) { animation-delay: 90ms; }
+  table.league tbody tr:nth-child(4) { animation-delay: 135ms; }
+  @keyframes rowIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: none; } }
+  /* table-layout:fixed + percentage column widths (instead of a min-width wider than an
+     iPhone's content area) is what actually keeps this on one screen: fixed layout stops
+     a long club name from forcing the whole table wider than its container, so every
+     column — Pts included — stays on-screen with no horizontal scroll needed. */
+  table.league { border-collapse: collapse; width: 100%; table-layout: fixed; font-size: 12px; }
+  table.league th, table.league td { padding: 6px 5px; text-align: right; font-variant-numeric: tabular-nums; border-bottom: 1px solid var(--rule); overflow: hidden; }
+  table.league th:first-child, table.league td:first-child { width: 11%; }
+  table.league th:nth-child(2), table.league td:nth-child(2) { width: 59%; }
+  table.league th:nth-child(3), table.league td:nth-child(3) { width: 15%; }
+  table.league th:nth-child(4), table.league td:nth-child(4) { width: 15%; }
+  table.league th:first-child, table.league td:first-child,
+  table.league th:nth-child(2), table.league td:nth-child(2) { text-align: left; }
+  table.league td:nth-child(2) { white-space: nowrap; text-overflow: ellipsis; }
+  table.league thead th { font-family: var(--font-display); font-size: 10px; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink); font-weight: 700; border-bottom: 2px solid var(--border-strong); background: var(--surface-2); }
+  table.league td { font-family: var(--font-mono); color: var(--ink-soft); }
+  table.league tr:nth-child(even) td { background: var(--surface); }
+  table.league td.pos { color: var(--ink-faint); font-weight: 700; }
+  /* "Under the Lights": drop-zone and your-row read as solid broadcast-graphic colour
+     blocks (Sky red / Sky blue) rather than a subtle tint + accent bar. */
+  table.league tr.zone td { background: var(--zone); color: var(--ink); }
+  table.league tr.zone td.pos { color: var(--ink); font-weight: 700; }
+  table.league tr.you td { background: var(--accent-fill); font-weight: 700; color: var(--accent-ink); }
+  table.league tr.you td.pos { color: var(--accent-ink); }
+  table.league tr.zone .kit-dot, table.league tr.you .kit-dot { background: var(--ink) !important; }
+
+  .btn-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 16px; }
+  .opt-btn { flex: 1 1 100px; background: transparent; border: 1.5px solid var(--border-strong); border-radius: 0; padding: 10px 10px; text-align: center; color: var(--ink); font-size: 12px; min-height: 44px; transition: border-color .12s ease, background .12s ease, color .12s ease; }
+  .opt-btn .name { display: block; font-family: var(--font-display); font-weight: 700; font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 3px; color: var(--ink); }
+  .opt-btn .sub { display: block; font-family: var(--font-mono); font-size: 10px; color: var(--ink-faint); text-transform: none; letter-spacing: normal; }
+  .opt-btn.selected { border-color: var(--accent-fill); background: var(--accent-fill); }
+  .opt-btn.selected .name, .opt-btn.selected .sub { color: var(--accent-ink); }
+  .opt-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+  @media (hover:hover) { .opt-btn:not(.selected):not(:disabled):hover { border-color: var(--ink-soft); } }
+  .opt-btn.stagger-in { animation: rowIn 0.28s ease both; }
+  .btn-row .opt-btn.stagger-in:nth-child(1) { animation-delay: 0ms; }
+  .btn-row .opt-btn.stagger-in:nth-child(2) { animation-delay: 40ms; }
+  .btn-row .opt-btn.stagger-in:nth-child(3) { animation-delay: 80ms; }
+  .btn-row .opt-btn.stagger-in:nth-child(4) { animation-delay: 120ms; }
+  .btn-row .opt-btn.stagger-in:nth-child(5) { animation-delay: 160ms; }
+
+  .primary-btn { position: relative; background: var(--accent-fill); color: var(--accent-ink); border: 3px solid var(--ink); border-radius: 0; padding: 13px 22px 13px 30px; font-size: 14px; letter-spacing: 0.06em; width: 100%; min-height: 46px; overflow: hidden; box-shadow: 5px 5px 0 #000; transition: background .12s ease, transform .08s ease, box-shadow .08s ease; }
+  .primary-btn::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 15px; background: var(--accent-bright); clip-path: polygon(0 0, 100% 50%, 0 100%); }
+  .primary-btn:active { transform: translate(3px,3px); box-shadow: 2px 2px 0 #000; background: var(--accent-bright); }
+  .primary-btn:disabled { background: var(--surface-2); color: var(--ink-faint); border-color: var(--border-strong); box-shadow: none; }
+  .primary-btn:disabled::before { background: var(--border-strong); }
+  @media (hover:hover) { .primary-btn:hover { background: var(--accent-bright); } }
+  .secondary-btn { background: none; border: 1.5px solid var(--border-strong); border-radius: 0; color: var(--ink-soft); font-size: 12.5px; padding: 10px 18px; }
+  .secondary-btn:hover { border-color: var(--ink-soft); color: var(--ink); }
+
+  /* ---- pitch ---- */
+  .pitch-wrap { position: relative; overflow: hidden; background: var(--pitch); border: 1px solid var(--border-strong); padding: 10px; margin-bottom: 14px; }
+  .pitch-wrap svg { position: relative; z-index: 2; width: 100%; height: auto; display: block; }
+  .pitch-glow { position: absolute; left: 0; right: 0; height: 40%; opacity: 0; pointer-events: none; z-index: 1; transition: opacity 0.5s ease; }
+  .pitch-glow.top { top: 0; background: radial-gradient(ellipse at center top, rgba(224,184,102,0.38), transparent 72%); }
+  .pitch-glow.bottom { bottom: 0; background: radial-gradient(ellipse at center bottom, rgba(226,104,92,0.34), transparent 72%); }
+  .pitch-glow.active { opacity: 1; }
+  #ballDot { transition: cx 0.55s cubic-bezier(.3,.7,.4,1), cy 0.55s cubic-bezier(.3,.7,.4,1); }
+  #ballGlow { transition: cx 0.55s cubic-bezier(.3,.7,.4,1), cy 0.55s cubic-bezier(.3,.7,.4,1); }
+  #ballGlow.ball-glow-ping { animation: ballPing 0.7s ease-out; }
+  @keyframes ballPing { 0% { opacity: 0.85; r: 5; } 100% { opacity: 0; r: 30; } }
+  .pdot-you { animation: pdotBreatheBig 2.6s ease-in-out infinite; }
+  .pdot-opp { animation: pdotBreatheSmall 2.6s ease-in-out infinite; }
+  @keyframes pdotBreatheBig { 0%, 100% { r: 7; } 50% { r: 7.8; } }
+  @keyframes pdotBreatheSmall { 0%, 100% { r: 6; } 50% { r: 6.6; } }
+  .scoreboard { display: flex; align-items: center; justify-content: center; gap: 16px; padding: 14px 0; background: var(--surface-2); border-top: 2px solid var(--border-strong); border-bottom: 1px solid var(--border); margin-bottom: 10px; }
+  .scoreboard .sc { font-family: var(--font-mono); font-size: 30px; font-weight: 700; font-variant-numeric: tabular-nums; display: inline-block; color: var(--ink); }
+  .scoreboard .sc.pulse { animation: scPulse 0.5s ease; }
+  @keyframes scPulse { 0% { transform: scale(1); color: var(--accent-bright); } 40% { transform: scale(1.32); color: var(--accent-bright); } 100% { transform: scale(1); color: var(--ink); } }
+  .scoreboard .vs { font-size: 11px; color: var(--ink-faint); letter-spacing: 0.08em; }
+  /* Tactics and Skip ahead flank the minute badge in one centered row, rather than
+     sitting in their own status row further down the screen. */
+  .minute-row { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 10px; }
+  .minute-badge { font-family: var(--font-mono); font-size: 12px; font-weight: 700; background: var(--accent-fill); color: var(--accent-ink); border-radius: 0; padding: 4px 10px; letter-spacing: 0.04em; transition: opacity 0.2s ease; }
+  .minute-badge.tick { animation: minuteTick 0.4s ease; }
+  @keyframes minuteTick { 0% { transform: scale(1); } 40% { transform: scale(1.14); background: var(--accent-bright); } 100% { transform: scale(1); background: var(--accent-fill); } }
+
+  .feed { list-style: none; margin: 0 0 14px; padding: 0; max-height: 220px; overflow-y: auto; border-top: 2px solid var(--border-strong); border-bottom: 2px solid var(--border-strong); background: transparent; }
+  .feed li { display: flex; gap: 10px; padding: 9px 4px; border-bottom: 1px solid var(--border); font-family: var(--font-body); font-size: 13.5px; color: var(--ink-soft); animation: fadein 0.35s cubic-bezier(.2,.8,.2,1); }
+  .feed li:last-child { border-bottom: none; }
+  .feed li.goal-line { animation: fadein 0.35s cubic-bezier(.2,.8,.2,1), goalFlash 1s ease; }
+  .feed .m { font-family: var(--font-mono); font-size: 11px; color: var(--ink-faint); min-width: 40px; padding-top: 1px; }
+  .feed .goal { font-weight: 700; color: var(--ink); text-transform: uppercase; letter-spacing: 0.02em; }
+  @keyframes fadein { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  @keyframes goalFlash { 0% { background: rgba(224,184,102,0.22); } 100% { background: transparent; } }
+
+  .skip-btn { background: none; border: none; color: var(--ink-faint); font-family: var(--font-display); font-weight: 600; font-size: 11px; letter-spacing: 0.05em; text-decoration: underline; padding: 4px; }
+  .skip-btn:hover { color: var(--accent-bright); }
+  .skip-btn:disabled { opacity: 0.35; text-decoration: none; cursor: not-allowed; }
+  .tactics-btn { background: transparent; border: 1.5px solid var(--accent); border-radius: 0; color: var(--accent-bright); font-family: var(--font-display); font-weight: 700; font-size: 10.5px; letter-spacing: 0.05em; text-transform: uppercase; padding: 6px 12px; min-height: 30px; }
+  .tactics-btn:hover { background: var(--accent); color: var(--accent-ink); }
+  .tactics-btn:disabled { opacity: 0.35; border-color: var(--border-strong); color: var(--ink-faint); cursor: not-allowed; background: transparent; }
+
+  .decision-box .dtitle { font-size: 11px; letter-spacing: 0.08em; color: var(--accent); margin-bottom: 10px; }
+  .decision-box h4 { font-size: 11px; margin: 12px 0 6px; color: var(--ink-faint); letter-spacing: 0.06em; }
+  .decision-box h4:first-of-type { margin-top: 0; }
+
+  /* ---- stats / result ---- */
+  .stat-row { display: flex; flex-wrap: wrap; margin: 14px 0; }
+  .stat-pill { flex: 1 1 78px; padding: 2px 14px; border-left: 1px solid var(--border); }
+  .stat-pill:first-child { border-left: none; padding-left: 0; }
+  .stat-pill .n { font-family: var(--font-mono); font-size: 20px; font-weight: 700; font-variant-numeric: tabular-nums; display: block; color: var(--ink); }
+  .stat-pill .l { font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-faint); }
+
+  /* ---- Manager's Ledger ---- */
+  .ledger-panel { font-size: 13.5px; }
+  .ledger-title { font-size: 16px; margin: 0 0 2px; }
+  .ledger-intro { font-family: var(--font-body); font-size: 12.5px; font-weight: 400; text-transform: none; letter-spacing: normal; color: var(--ink-soft); margin: 0 0 12px; }
+  .ledger-records { display: flex; flex-direction: column; margin-top: 2px; }
+  .ledger-record { border-top: 1px solid var(--border); padding: 10px 0; }
+  .ledger-record:first-child { border-top: none; }
+  .ledger-record .rk { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 3px; }
+  .ledger-record .rv { font-family: var(--font-display); font-weight: 700; font-size: 15.5px; color: var(--accent-bright); }
+  .ledger-record .rv.empty { color: var(--ink-faint); font-weight: 600; }
+  .ledger-record .rd { font-family: var(--font-mono); font-size: 11px; color: var(--ink-faint); margin-top: 2px; }
+
+  @keyframes bannerPop { from { opacity: 0; transform: scale(0.96); } to { opacity: 1; transform: none; } }
+  .outcome-heading.safe { color: var(--safe); }
+  .outcome-heading.down { color: var(--danger); }
+  /* ---- rubber-stamp treatment for the full-time outcome ---- */
+  #outcomeHeadline { display: table; margin: 0 auto 14px; padding: 6px 22px; border: 4px solid currentColor; transform: rotate(-4deg); box-shadow: 6px 6px 0 #000; text-align: center; }
+  #outcomeSub { text-align: center; }
+
+  .result-strip { font-size: 22px; letter-spacing: 0.08em; text-align: center; margin: 6px 0 16px; }
+
+  /* ---- share card: a screenshot-worthy result summary, doubling as the result screen's
+     centerpiece so the plain outcome text and the shareable card aren't two separate
+     things saying the same thing twice. ---- */
+  .share-card { position: relative; border-top: 2px solid var(--border-strong); background: var(--surface-2); padding: 16px 18px 18px; margin: 4px 0 18px; animation: bannerPop 0.5s cubic-bezier(.2,.8,.2,1); }
+  .share-card.safe { border-color: var(--safe); }
+  .share-card.down { border-color: var(--danger); }
+  .share-card-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px; }
+  .share-card-day { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-faint); }
+  .share-card-badge { font-family: var(--font-display); font-size: 10.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 9px; border: 1px solid; }
+  .share-card-badge.safe { color: var(--safe); border-color: var(--safe); }
+  .share-card-badge.down { color: var(--danger); border-color: var(--danger); }
+  .share-card-club { display: flex; align-items: center; gap: 8px; font-family: var(--font-display); font-weight: 700; font-size: 16px; text-transform: uppercase; letter-spacing: 0.01em; color: var(--ink); margin-bottom: 6px; }
+  .share-card-pts { font-family: var(--font-mono); font-size: 36px; font-weight: 700; line-height: 1; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .share-card-pts .unit { font-size: 13px; font-weight: 700; color: var(--ink-faint); letter-spacing: 0.06em; margin-left: 5px; }
+  .share-card-margin { font-family: var(--font-mono); font-size: 12.5px; color: var(--ink-soft); margin: 4px 0 16px; }
+  .share-card-strip { font-size: 21px; letter-spacing: 0.16em; text-align: center; padding-top: 14px; border-top: 1px dashed var(--border-strong); }
+
+  .share-preview-details { margin: 2px 0 14px; }
+  .share-mock { background: var(--surface-2); border: 1px solid var(--border-strong); color: var(--ink); font-family: var(--font-mono); font-size: 12.5px; line-height: 1.7; border-radius: 0; padding: 16px 18px; white-space: pre-wrap; word-break: break-word; margin-top: 8px; }
+  .copy-fallback { width: 100%; font-family: var(--font-mono); font-size: 12px; padding: 10px; border-radius: 0; border: 1px solid var(--border-strong); background: var(--surface); color: var(--ink); resize: vertical; }
+  .toast { font-family: var(--font-mono); font-size: 12px; color: var(--safe); margin-top: 6px; min-height: 1.4em; }
+
+  /* ---- final-day badge (club strip, carried through the last game) ---- */
+  .final-badge { align-self: center; font-family: var(--font-mono); font-size: 9.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--danger); border: 1px solid var(--danger); padding: 3px 8px; animation: finalBadgeIn 0.3s ease; }
+  @keyframes finalBadgeIn { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: none; } }
+
+  /* ---- Survival Sunday: final-day drama screen ---- */
+  .survival-screen { position: relative; text-align: center; padding-top: 6px; overflow: hidden; }
+  .survival-glow { position: absolute; inset: -40px -20px auto -20px; height: 230px; z-index: 0; pointer-events: none;
+    background: radial-gradient(ellipse at center top, rgba(226,104,92,0.55), transparent 70%);
+    animation: survivalPulse 2.2s ease-in-out infinite; }
+  @keyframes survivalPulse { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
+  .survival-kicker { position: relative; z-index: 1; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--danger); margin-bottom: 6px; animation: survivalFlicker 1.4s steps(2,end) infinite; }
+  @keyframes survivalFlicker { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+  .survival-heading { position: relative; z-index: 1; font-size: 44px; line-height: 0.98; letter-spacing: 0.005em; margin: 0 0 14px; color: var(--ink);
+    text-shadow: 0 0 20px rgba(226,104,92,0.6); animation: survivalHeadingIn 0.6s cubic-bezier(.2,.8,.2,1); text-wrap: balance; }
+  @keyframes survivalHeadingIn { from { opacity: 0; transform: scale(0.92); } to { opacity: 1; transform: none; } }
+  .survival-lede { position: relative; z-index: 1; font-family: var(--font-body); font-size: 15px; text-transform: none; letter-spacing: normal; font-weight: 400; color: var(--ink-soft); max-width: 42ch; margin: 0 auto 20px; text-wrap: balance; }
+  .survival-card { position: relative; z-index: 1; border-top: 2px solid var(--danger); border-bottom: 2px solid var(--danger); background: var(--danger-bg); padding: 14px 4px; margin-bottom: 20px; }
+  .survival-row { display: flex; align-items: baseline; justify-content: space-between; padding: 5px 14px; }
+  .survival-club { font-family: var(--font-display); font-weight: 700; font-size: 14.5px; text-transform: uppercase; letter-spacing: 0.02em; color: var(--ink); text-align: left; }
+  .survival-pts { font-family: var(--font-mono); font-size: 22px; font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .survival-vs { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-faint); padding: 3px 0; }
+  .survival-btn { position: relative; z-index: 1; background: var(--danger); }
+  .survival-btn::before { background: #F2A79E; }
+  @media (hover:hover) { .survival-btn:hover { background: #EF7C70; } }
+
+  /* ---- footer links to the in-app legal/info screens (privacy, cookies, terms, contact) ---- */
+  .legal-footer { display: flex; flex-wrap: wrap; gap: 6px 10px; justify-content: center; margin-top: 22px; padding-top: 14px; border-top: 1px solid var(--border); }
+  .legal-footer .legal-link { background: none; border: none; padding: 4px 0; font-family: var(--font-display); font-size: 10px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-faint); text-decoration: none; }
+  .legal-footer .legal-link:hover { color: var(--accent-bright); }
+  .legal-footer span { color: var(--border-strong); align-self: center; }
+
+  /* ---- legal/info screens (privacy, cookies, terms, contact) ---- */
+  .legal-back { margin-bottom: 16px; }
+  .legal-updated { font-family: var(--font-mono); font-size: 12px; color: var(--ink-faint); margin: -6px 0 18px; text-transform: none; }
+  .legal-body p { font-size: 14.5px; line-height: 1.6; margin: 0 0 12px; }
+  .legal-body h3 { font-family: var(--font-display); font-weight: 700; font-size: 12.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); margin: 24px 0 8px; padding-top: 16px; border-top: 1px solid var(--border); }
+  .legal-body h3:first-of-type { margin-top: 0; padding-top: 0; border-top: none; }
+  .legal-body h4 { font-family: var(--font-display); font-weight: 700; font-size: 11px; letter-spacing: 0.03em; text-transform: uppercase; color: var(--ink); margin: 14px 0 6px; }
+  .legal-body strong { color: var(--ink); }
+  .legal-body a { color: var(--accent-bright); }
+  .legal-body a:hover { color: var(--accent); }
+  /* Inline cross-links between legal screens are real <button>s (there's no separate URL to
+     link to), styled to read like ordinary hyperlinks inside a sentence. */
+  .legal-link { background: none; border: none; padding: 0; margin: 0; font: inherit; text-transform: none; letter-spacing: normal; color: var(--accent-bright); text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+  .legal-link:hover { color: var(--accent); }
+  .legal-body ul { margin: 0 0 12px; padding-left: 18px; }
+  .legal-body li { margin-bottom: 6px; font-size: 14.5px; line-height: 1.5; color: var(--ink-soft); }
+  .legal-table-wrap { overflow-x: auto; margin: 4px 0 16px; }
+  /* table-layout:fixed + percentage widths keeps this 3-column table on-screen on a
+     phone with no horizontal scroll needed, same approach table.league uses. */
+  .legal-table { border-collapse: collapse; width: 100%; font-size: 12.5px; table-layout: fixed; }
+  .legal-table th, .legal-table td { text-align: left; padding: 7px 6px; border-bottom: 1px solid var(--rule); vertical-align: top; overflow-wrap: break-word; font-weight: 400; }
+  .legal-table th:first-child, .legal-table td:first-child { width: 24%; }
+  .legal-table th:nth-child(2), .legal-table td:nth-child(2) { width: 54%; }
+  .legal-table th:nth-child(3), .legal-table td:nth-child(3) { width: 22%; }
+  .legal-table th { font-family: var(--font-display); font-size: 9.5px; letter-spacing: 0.05em; color: var(--ink-faint); border-bottom: 2px solid var(--border-strong); background: var(--surface-2); }
+  .legal-table td { color: var(--ink-soft); }
+  .legal-table .k { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink); }
+  .legal-contact-block { border: 2px solid var(--border-strong); padding: 16px 18px; margin: 8px 0 20px; background: var(--surface); box-shadow: 4px 4px 0 #000; }
+  .legal-contact-block .k-label { font-size: 12px; color: var(--ink-faint); }
+  .legal-contact-block .email { display: inline-block; font-family: var(--font-mono); font-size: 15px; color: var(--accent-bright); margin-top: 4px; text-decoration: none; }
+  .legal-contact-block .email:hover { text-decoration: underline; }
+
+  /* ---- landing/homepage screen (first-visit entry point) ---- */
+  .landing-hero { text-align: center; padding: 10px 0 26px; }
+  .landing-day { display: inline-block; margin-bottom: 14px; }
+  .landing-title { font-family: var(--font-body); font-style: italic; font-weight: 700; font-size: 34px; color: var(--accent-bright); margin: 0 0 8px; letter-spacing: 0.005em; }
+  .landing-tagline { font-family: var(--font-display); font-weight: 600; font-size: 13.5px; letter-spacing: 0.03em; text-transform: uppercase; color: var(--ink-soft); margin: 0 0 18px; }
+  .landing-hook { font-size: 15.5px; line-height: 1.6; color: var(--ink-soft); max-width: 440px; margin: 0 auto 22px; text-wrap: balance; }
+  .landing-cta { display: block; width: 100%; max-width: 360px; margin: 0 auto; }
+  .landing-reassure { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-faint); margin: 14px 0 0; }
+  .landing-steps { margin-bottom: 16px; }
+  .step-list { list-style: none; margin: 0; padding: 0; }
+  .step { display: flex; gap: 14px; align-items: flex-start; padding: 12px 0; border-top: 1px solid var(--border); }
+  .step:first-child { border-top: none; padding-top: 4px; }
+  .step-num { flex-shrink: 0; width: 28px; height: 28px; border: 1.5px solid var(--accent); color: var(--accent-bright); font-family: var(--font-mono); font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center; }
+  .step h4 { font-family: var(--font-display); font-weight: 700; font-size: 13px; letter-spacing: 0.02em; text-transform: uppercase; color: var(--ink); margin: 3px 0 4px; }
+  .step p { font-size: 13.5px; line-height: 1.5; color: var(--ink-soft); margin: 0; }
+  .landing-features { margin-bottom: 20px; }
+  .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  @media (max-width: 420px) { .feature-grid { grid-template-columns: 1fr; } }
+  .feature-card { border: 2px solid var(--border-strong); padding: 12px 13px; background: var(--surface-2); box-shadow: 3px 3px 0 #000; }
+  .feature-card h4 { font-family: var(--font-display); font-weight: 700; font-size: 12px; letter-spacing: 0.02em; text-transform: uppercase; color: var(--accent-bright); margin: 0 0 5px; }
+  .feature-card p { font-size: 12.5px; line-height: 1.45; color: var(--ink-soft); margin: 0; }
+
+  /* ---- ticket-stub motif: landing "today's scrap" hook card ---- */
+  .hook-ticket { position: relative; background: #F3F5F9; color: #16213D; border: 3px solid var(--ink); border-radius: 0; padding: 15px 18px 17px; margin: 0 auto 22px; max-width: 440px; text-align: left; box-shadow: 5px 5px 0 #000; }
+  .hook-ticket-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #5B6478; margin: 0; }
+  .hook-tear { position: relative; border-top: 2px dashed rgba(22,33,61,0.35); margin: 10px -18px; }
+  .hook-notch { position: absolute; top: -9px; width: 18px; height: 18px; border-radius: 50%; background: var(--bg); }
+  .hook-notch.left { left: -9px; } .hook-notch.right { right: -9px; }
+  .hook-ticket .landing-hook { color: #29354C; margin: 12px 0 0; max-width: none; text-align: left; text-wrap: pretty; }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+</head>
+<body>
+
+
+<div class="page">
+  <div class="topbar">
+    <div class="brand"><span class="mark-row"><span class="mark">The Run In</span><span class="day-badge" id="topDayBadge"></span></span><span class="wt">Prototype</span></div>
+    <div class="topbar-actions">
+      <button class="rules-btn reset-btn" id="resetTestBtn" type="button" title="Testing only — clears today's saved result/stats and starts a fresh run">Reset</button>
+      <button class="rules-btn" id="ledgerToggle" type="button">Ledger</button>
+      <button class="rules-btn" id="rulesToggle" type="button">Rules</button>
+    </div>
+  </div>
+
+  <div class="sheet-scrim" id="sheetScrim" hidden></div>
+
+  <div class="rules-panel sheet" id="rulesPanel" hidden>
+    <div class="sheet-handle"></div>
+    <p class="rules-summary">Pick a tactic &amp; formation before kick-off, then react at a few key moments during the game. Finish level with your benchmark rival's points total or above and you're safe.</p>
+    <details class="disclosure">
+      <summary>Full rules</summary>
+      <h3>The situation</h3>
+      <ul><li>Same club, same run-in as every other player today &mdash; the day's scenario is fixed, so it's decisions that separate results, not luck.</li></ul>
+      <h3>Before each match</h3>
+      <ul><li><strong>Tactic:</strong> Attacking, Neutral or Defensive.</li><li><strong>Formation:</strong> 4-3-3 (attack-leaning), 4-4-2 (balanced) or 5-3-2 (defence-leaning). The two stack.</li></ul>
+      <h3>During each match</h3>
+      <ul><li>At a few key moments you can switch tactic (max 2 per game) and make a substitution (max 5 per game): Fresh Legs, Go Attacking, or Shore It Up.</li></ul>
+      <h3>Staying up</h3>
+      <ul><li>You're watching one benchmark rival. Finish level with them or ahead and you're safe; if the arithmetic rules you out before the run ends, it's over immediately.</li></ul>
+    </details>
+  </div>
+
+  <div class="ledger-panel sheet" id="ledgerPanel" hidden>
+    <div class="sheet-handle"></div>
+    <h3 class="ledger-title">Manager's Ledger</h3>
+    <p class="ledger-intro">Your managerial career at Mereford, across every run so far.</p>
+    <div class="stat-row" id="ledgerCareerStats"></div>
+    <div class="ledger-records" id="ledgerRecords"></div>
+  </div>
+
+  <div class="club-strip" id="clubStrip"></div>
+
+  <div id="screen-landing" class="screen" hidden>
+    <div class="landing-hero">
+      <span class="day-badge landing-day" id="landingDayBadge"></span>
+      <h1 class="landing-title">The Run In</h1>
+      <p class="landing-tagline">A five-minute relegation battle. New situation every day.</p>
+      <div class="hook-ticket">
+        <p class="hook-ticket-label">Today's scrap</p>
+        <div class="hook-tear"><span class="hook-notch left"></span><span class="hook-notch right"></span></div>
+        <p class="landing-hook" id="landingHook"></p>
+      </div>
+      <button class="primary-btn landing-cta" id="landingPlayBtn" type="button">Play today's run</button>
+      <p class="landing-reassure">Free &middot; No account &middot; ~2 minutes</p>
+    </div>
+
+    <div class="card landing-steps">
+      <div class="card-label">How it works</div>
+      <ol class="step-list">
+        <li class="step"><span class="step-num">1</span><div><h4>Get today's situation</h4><p>A fresh relegation scrap, generated fresh each day &mdash; the same one for every player.</p></div></li>
+        <li class="step"><span class="step-num">2</span><div><h4>Set your tactic &amp; formation</h4><p>Pick your approach before kickoff: Attacking, Neutral or Defensive, paired with a formation.</p></div></li>
+        <li class="step"><span class="step-num">3</span><div><h4>React at key moments</h4><p>Switch tactics and make substitutions as the match swings, with a limited number of each.</p></div></li>
+        <li class="step"><span class="step-num">4</span><div><h4>Match your rival, survive</h4><p>Finish level with your benchmark rival's points or better across the run-in and you're safe.</p></div></li>
+      </ol>
+    </div>
+
+    <div class="card landing-features">
+      <div class="card-label">Why come back</div>
+      <div class="feature-grid">
+        <div class="feature-card"><h4>A new club every day</h4><p>Different club, different rival, different run-in each time you play.</p></div>
+        <div class="feature-card"><h4>One shared situation</h4><p>No shuffled odds &mdash; everyone gets today's exact scenario.</p></div>
+        <div class="feature-card"><h4>Shareable result card</h4><p>Full time gets you a result card to share &mdash; the escape, or the drop.</p></div>
+        <div class="feature-card"><h4>Manager's Ledger</h4><p>Your streaks, best escapes and best runs, tracked across every day you've played.</p></div>
+      </div>
+    </div>
+
+    <button class="primary-btn landing-cta" id="landingPlayBtnBottom" type="button">Play today's run</button>
+
+    <nav class="legal-footer" aria-label="Legal">
+      <button class="legal-link" type="button" data-screen="privacy">Privacy</button><span aria-hidden="true">&middot;</span>
+      <button class="legal-link" type="button" data-screen="cookies">Cookies</button><span aria-hidden="true">&middot;</span>
+      <button class="legal-link" type="button" data-screen="terms">Terms</button><span aria-hidden="true">&middot;</span>
+      <button class="legal-link" type="button" data-screen="contact">Contact</button>
+    </nav>
+  </div>
+
+  <div id="screen-home" class="screen" hidden>
+    <h2 class="big">Today's situation</h2>
+    <p class="lede" id="homeLede"></p>
+    <div class="card">
+      <div class="card-label">Relegation picture</div>
+      <div class="table-wrap"><table class="league" id="homeTable"></table></div>
+    </div>
+    <button class="primary-btn" id="startRunBtn" type="button">Kick off the run</button>
+    <nav class="legal-footer" aria-label="Legal">
+      <button class="legal-link" type="button" data-screen="landing">About</button><span aria-hidden="true">&middot;</span>
+      <button class="legal-link" type="button" data-screen="privacy">Privacy</button><span aria-hidden="true">&middot;</span>
+      <button class="legal-link" type="button" data-screen="cookies">Cookies</button><span aria-hidden="true">&middot;</span>
+      <button class="legal-link" type="button" data-screen="terms">Terms</button><span aria-hidden="true">&middot;</span>
+      <button class="legal-link" type="button" data-screen="contact">Contact</button>
+    </nav>
+  </div>
+
+  <div id="screen-prematch" class="screen" hidden>
+    <h2 class="big" id="pmTitle"></h2>
+    <p class="lede" id="pmLede"></p>
+    <div class="card-label">Tactic</div>
+    <div class="btn-row" id="pmTactics"></div>
+    <div class="card-label">Formation</div>
+    <div class="btn-row" id="pmFormations"></div>
+    <button class="primary-btn" id="kickoffBtn" type="button">Kick off</button>
+  </div>
+
+  <div id="screen-inplay" class="screen" hidden>
+    <div class="scoreboard">
+      <span class="sc" id="ipScoreYou">0</span><span class="vs" id="ipVs"></span><span class="sc" id="ipScoreOpp">0</span>
+    </div>
+    <div class="minute-row">
+      <button class="tactics-btn" id="ipTacticsBtn" type="button">Tactics</button>
+      <div class="minute-badge" id="ipMinute"></div>
+      <button class="skip-btn" id="ipSkipBtn" type="button">Skip ahead</button>
+    </div>
+    <div class="pitch-wrap"><div class="pitch-glow top" id="glowTop"></div><div class="pitch-glow bottom" id="glowBottom"></div><svg id="pitchSvg" viewBox="0 0 240 220"></svg></div>
+    <ul class="feed" id="ipFeed"></ul>
+    <div class="decision-box sheet" id="ipDecision" hidden></div>
+  </div>
+
+  <div id="screen-fulltime" class="screen" hidden>
+    <h2 class="big">Full time</h2>
+    <div class="result-strip" id="ftScore"></div>
+    <p class="lede" id="ftSummary"></p>
+    <div class="card">
+      <div class="card-label">Relegation picture</div>
+      <div class="table-wrap"><table class="league" id="ftTable"></table></div>
+    </div>
+    <button class="primary-btn" id="ftContinueBtn" type="button">Continue</button>
+  </div>
+
+  <div id="screen-survival-sunday" class="screen survival-screen" hidden>
+    <div class="survival-glow" aria-hidden="true"></div>
+    <div class="survival-kicker">Final day</div>
+    <h2 class="survival-heading">SURVIVAL<br>SUNDAY</h2>
+    <p class="survival-lede" id="survivalLede"></p>
+    <div class="survival-card">
+      <div class="survival-row"><span class="survival-club" id="survivalTopName"></span><span class="survival-pts" id="survivalTopPts"></span></div>
+      <div class="survival-vs">&mdash; one match each left &mdash;</div>
+      <div class="survival-row"><span class="survival-club" id="survivalBottomName"></span><span class="survival-pts" id="survivalBottomPts"></span></div>
+    </div>
+    <button class="primary-btn survival-btn" id="survivalContinueBtn" type="button">Kick off the final day</button>
+  </div>
+
+  <div id="screen-result" class="screen" hidden>
+    <h2 class="big outcome-heading" id="outcomeHeadline"></h2>
+    <p class="lede" id="outcomeSub"></p>
+
+    <div class="share-card" id="shareCard">
+      <div class="share-card-top">
+        <span class="share-card-day" id="scDay"></span>
+        <span class="share-card-badge" id="scBadge"></span>
+      </div>
+      <div class="share-card-club"><span class="kit-dot" id="scKitDot"></span><span id="scClub"></span></div>
+      <div class="share-card-pts"><span id="scPts"></span><span class="unit">PTS</span></div>
+      <div class="share-card-margin" id="scMargin"></div>
+      <div class="share-card-strip" id="scStrip"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-label">Your record</div>
+      <div class="stat-row" id="statRow"></div>
+    </div>
+    <button class="primary-btn" id="shareBtn" type="button">Share result</button>
+    <details class="disclosure share-preview-details">
+      <summary>Copy as text</summary>
+      <div class="share-mock" id="shareText"></div>
+    </details>
+    <textarea class="copy-fallback" id="copyFallback" hidden readonly rows="4"></textarea>
+    <div class="toast" id="shareToast"></div>
+    <p style="font-size:13px;color:var(--ink-faint);margin-top:16px;" id="comeBackNote"></p>
+  </div>
+
+  <div id="screen-privacy" class="screen" hidden>
+    <button class="rules-btn legal-back" type="button" data-back>&larr; Back to game</button>
+    <h2 class="big">Privacy Policy</h2>
+    <p class="legal-updated">Last updated: 12 September 2026</p>
+    <div class="legal-body">
+      <p>The Run In ("the game", "we", "us") is a free browser football/relegation-survival game available at therunin.app. This policy explains what information the game and this site collect, why, and what choices you have. It's written for this specific site — it isn't a generic template.</p>
+      <p>We're a small, independent, UK-based project. If anything here is unclear, email <a href="mailto:futbolpurete@gmail.com">futbolpurete@gmail.com</a> and we'll do our best to help.</p>
+
+      <h3>1. Information we collect</h3>
+      <h4>Game progress (stored on your device only)</h4>
+      <p>The Run In doesn't use accounts, logins, or a server-side database. Your daily results, stats and "Manager's Ledger" history are saved using your browser's <strong>local storage</strong> (under the key <span class="k">dailyRelegation.v1</span>), directly on your own device. This data never leaves your device, is never transmitted to us, and we have no way to see it. It stays there until you clear your browser data, use the in-game "Reset" option, or clear it yourself via your browser settings.</p>
+      <h4>Information collected automatically by hosting infrastructure</h4>
+      <p>Like effectively any website, when you load therunin.app our hosting/content-delivery provider (Cloudflare) automatically processes standard technical data to serve the page and keep it secure — things like your IP address, approximate location derived from it, browser type, device type, and request timestamps. We don't use this for tracking or profiling; it's the ordinary operation of serving a web page, retained briefly by Cloudflare per their own practices.</p>
+      <h4>Advertising and analytics</h4>
+      <p>The Run In does not currently display advertising or run any analytics or tracking scripts. We plan to introduce advertising in future (via Google AdSense) as a way of covering hosting costs. When that happens:</p>
+      <ul>
+        <li>Google and its advertising partners may set cookies or use similar technologies on this site to serve ads, measure their performance, and limit how often you see the same ad.</li>
+        <li>This may involve Google or its partners collecting data such as your device identifiers, approximate location (from your IP address), browser/device information, and interactions with ads, in order to serve ads (including, potentially, personalised ads based on your activity on this and other sites).</li>
+        <li>You can find out how Google uses information from sites that use its services at <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a>, and control the personalised ads you see across the web at <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>.</li>
+      </ul>
+      <p>We'll update this policy — and our Cookie Policy — before or as soon as advertising goes live, and we'll add an on-site cookie consent option at that point too.</p>
+
+      <h3>2. How we use information</h3>
+      <p>The limited data described above is used only to: run and secure the site (via our hosting provider), let the game function and remember your progress on your own device, and — once introduced — to serve and measure advertising. We do not sell any information, and we don't otherwise attempt to identify individual visitors.</p>
+
+      <h3>3. Cookies</h3>
+      <p>The game itself does not currently set any cookies (it uses local storage instead, described above). See our <button class="legal-link" type="button" data-screen="cookies">Cookie Policy</button> for full details, including what will change once advertising is introduced.</p>
+
+      <h3>4. Sharing of information</h3>
+      <p>We don't share, sell, or rent any personal information to third parties. The only third parties who will process any data in connection with this site are: our hosting/CDN provider (Cloudflare), and — once advertising is live — Google and its advertising partners, strictly for the purposes described above.</p>
+
+      <h3>5. Children's privacy</h3>
+      <p>The Run In is a general-audience football game and is not directed at children under 13. We don't knowingly collect personal information from children. If advertising is introduced, we intend to configure it in line with applicable requirements for any traffic that may include children (for example, Google's rules for treating sites and users as child-directed where relevant).</p>
+
+      <h3>6. International visitors</h3>
+      <p>This site is operated from the United Kingdom but is accessible globally. Wherever you're visiting from, the limited technical data described above may be processed on servers outside your own country — for example, on Cloudflare's global network, and (once introduced) Google's advertising infrastructure — as part of normal internet operation.</p>
+
+      <h3>7. Your rights</h3>
+      <p>Because we don't collect or hold personal data about you beyond the routine technical data described above (which we don't tie to your identity), there's generally nothing for us to look up, correct or delete on request. Where UK GDPR does apply to any data we do process, you have the right to ask for access to, correction of, or deletion of your data, to object to or restrict certain processing, and to data portability. You can contact us at <a href="mailto:futbolpurete@gmail.com">futbolpurete@gmail.com</a> with any such request, and you also have the right to complain to the UK's data protection regulator, the <a href="https://ico.org.uk/make-a-complaint/" target="_blank" rel="noopener">Information Commissioner's Office (ICO)</a>.</p>
+
+      <h3>8. Changes to this policy</h3>
+      <p>We may update this policy from time to time — most notably when advertising is introduced. We'll update the "Last updated" date above when we do. Significant changes (like turning on advertising) will also be reflected in the Cookie Policy.</p>
+
+      <h3>9. Contact us</h3>
+      <p>Questions about this policy or your data? Email <a href="mailto:futbolpurete@gmail.com">futbolpurete@gmail.com</a>, or see our <button class="legal-link" type="button" data-screen="contact">Contact page</button>.</p>
+    </div>
+  </div>
+
+  <div id="screen-cookies" class="screen" hidden>
+    <button class="rules-btn legal-back" type="button" data-back>&larr; Back to game</button>
+    <h2 class="big">Cookie Policy</h2>
+    <p class="legal-updated">Last updated: 12 September 2026</p>
+    <div class="legal-body">
+      <p>This page explains the cookies and similar storage technologies used on therunin.app, what they're for, and how you can control them.</p>
+
+      <h3>1. Cookies vs. local storage</h3>
+      <p>A "cookie" is a small file a website asks your browser to store, usually sent back to the site on later visits. "Local storage" is a similar browser feature, but — unlike a cookie — it is never automatically sent over the network; it just sits in your browser until a site reads it, and it's only accessible to the site that created it. We call out the distinction because right now, this site uses local storage rather than cookies.</p>
+
+      <h3>2. What we currently store</h3>
+      <p>The Run In doesn't currently set any cookies. It stores one item of local storage on your device, purely to run the game:</p>
+      <div class="legal-table-wrap">
+        <table class="legal-table">
+          <thead><tr><th>Name</th><th>Purpose</th><th>Duration</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><span class="k">dailyRelegation.v1</span></td>
+              <td>Remembers your daily result, stats, and Manager's Ledger history so progress carries over between visits. First-party local storage, essential to the game — never sent to our servers.</td>
+              <td>Until you clear it via the in-game "Reset" button or your browser settings</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>3. What will change once advertising is enabled</h3>
+      <p>We plan to introduce advertising via Google AdSense in future. Once that's live, Google and its advertising partners will set their own cookies on this site — for example, to serve ads, measure how they perform, and limit repeat impressions. Typical examples Google uses across sites that show its ads include:</p>
+      <div class="legal-table-wrap">
+        <table class="legal-table">
+          <thead><tr><th>Name (example)</th><th>Purpose</th><th>Typical duration</th></tr></thead>
+          <tbody>
+            <tr><td><span class="k">IDE</span></td><td>Ad personalisation and frequency capping (Google / DoubleClick)</td><td>Up to 13 months</td></tr>
+            <tr><td><span class="k">test_cookie</span></td><td>Checks whether your browser supports cookies (Google / DoubleClick)</td><td>~15 minutes</td></tr>
+            <tr><td><span class="k">NID / __Secure-*</span></td><td>Ad and search personalisation, security (Google)</td><td>Up to 6 months</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The exact cookies, names and durations are controlled by Google's own systems and can change — see Google's own explanation at <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener">policies.google.com/technologies/cookies</a>. When advertising goes live, we'll also add a cookie consent option on-site so you can choose whether to allow these before they're set, and we'll update this page and the table above at the same time.</p>
+
+      <h3>4. Managing cookies and local storage</h3>
+      <p>You're always in control of cookies and local storage through your own browser:</p>
+      <ul>
+        <li>Most browsers let you view, block, or delete cookies and site data for individual sites via their privacy/security settings.</li>
+        <li>You can clear this site's local storage (including your saved game progress) via the in-game "Reset" button, or by clearing site data for therunin.app in your browser settings.</li>
+        <li>Once advertising is enabled, you'll be able to opt out of personalised advertising from Google specifically at <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>, and from participating companies generally via <a href="https://www.youronlinechoices.com" target="_blank" rel="noopener">youronlinechoices.com</a>.</li>
+      </ul>
+      <p>Note that blocking local storage entirely will stop the game from remembering your progress between visits.</p>
+
+      <h3>5. Changes to this policy</h3>
+      <p>We'll update this page whenever what we store changes — most notably when advertising is switched on. Check the "Last updated" date above.</p>
+
+      <h3>6. Contact us</h3>
+      <p>Questions about cookies or this policy? Email <a href="mailto:futbolpurete@gmail.com">futbolpurete@gmail.com</a>. See also our <button class="legal-link" type="button" data-screen="privacy">Privacy Policy</button>.</p>
+    </div>
+  </div>
+
+  <div id="screen-terms" class="screen" hidden>
+    <button class="rules-btn legal-back" type="button" data-back>&larr; Back to game</button>
+    <h2 class="big">Terms of Use</h2>
+    <p class="legal-updated">Last updated: 12 September 2026</p>
+    <div class="legal-body">
+      <p>These terms cover your use of The Run In, the browser game at therunin.app ("the game", "the site"). By playing the game or otherwise using the site, you agree to these terms. If you don't agree, please don't use the site.</p>
+
+      <h3>1. What The Run In is</h3>
+      <p>The Run In is a free, single-player browser game about managing a football club's fight against relegation over a run-in of matches. It runs entirely in your browser — no account or sign-up is required, and your progress is stored on your own device (see our <button class="legal-link" type="button" data-screen="privacy">Privacy Policy</button>).</p>
+
+      <h3>2. Who can use it</h3>
+      <p>The game is intended for a general audience and isn't directed at children under 13. If you're under the age required to agree to terms like these in your country, please only use the site with the involvement of a parent or guardian.</p>
+
+      <h3>3. Acceptable use</h3>
+      <p>When using the site, please don't:</p>
+      <ul>
+        <li>Attempt to disrupt, overload, or gain unauthorised access to the site, its code, or its infrastructure;</li>
+        <li>Scrape, copy, decompile, reverse-engineer, or redistribute the game or its underlying code except as permitted by applicable law;</li>
+        <li>Use the site for any unlawful purpose, or in a way that could damage, disable or impair it for other players;</li>
+        <li>Misrepresent your affiliation with the game, or use it to distribute malware or spam.</li>
+      </ul>
+
+      <h3>4. Intellectual property</h3>
+      <p>The Run In — including its name, design, artwork, game mechanics as implemented, and underlying code — is the property of its developer, except where third-party components (such as fonts loaded from Google Fonts) are used under their own licences. You may play the game for personal, non-commercial enjoyment. You may not copy, modify, or redistribute the game or its code for commercial purposes without permission.</p>
+
+      <h3>5. No warranty</h3>
+      <p>The game is provided <strong>"as is" and "as available"</strong>, without warranties of any kind, whether express or implied. We don't guarantee the site will be uninterrupted, error-free, or available at all times — it's a small, independently run project, and things can occasionally break, change, or go offline, including permanently.</p>
+
+      <h3>6. Limitation of liability</h3>
+      <p>To the fullest extent permitted by law, we won't be liable for any indirect, incidental, or consequential loss or damage arising from your use of, or inability to use, the site — this is a free game, not a commercial service with guaranteed uptime or support. Nothing in these terms limits any liability that cannot legally be limited or excluded (for example, liability for death or personal injury caused by negligence, or for fraud).</p>
+
+      <h3>7. Advertising and third parties</h3>
+      <p>We may display advertising on the site in future (see our <button class="legal-link" type="button" data-screen="privacy">Privacy Policy</button> and <button class="legal-link" type="button" data-screen="cookies">Cookie Policy</button> for details). Where the site links to or displays content from third parties (including ad networks), we aren't responsible for that third-party content, and your use of it may be subject to that third party's own terms.</p>
+
+      <h3>8. Changes to the game or these terms</h3>
+      <p>We may update, change, suspend, or discontinue the game or any part of it at any time, and may update these terms from time to time — for example, as the game evolves or when advertising is introduced. We'll update the "Last updated" date above when we do. Continuing to use the site after changes take effect means you accept the updated terms.</p>
+
+      <h3>9. Governing law</h3>
+      <p>These terms are governed by the laws of England and Wales, and any disputes will be subject to the exclusive jurisdiction of the courts of England and Wales, without prejudice to any mandatory consumer protections that may apply in your own country of residence.</p>
+
+      <h3>10. Contact us</h3>
+      <p>Questions about these terms? Email <a href="mailto:futbolpurete@gmail.com">futbolpurete@gmail.com</a>, or see our <button class="legal-link" type="button" data-screen="contact">Contact page</button>.</p>
+    </div>
+  </div>
+
+  <div id="screen-contact" class="screen" hidden>
+    <button class="rules-btn legal-back" type="button" data-back>&larr; Back to game</button>
+    <h2 class="big">Contact</h2>
+    <div class="legal-body">
+      <p>For questions, feedback, bug reports, or enquiries about The Run In:</p>
+      <div class="legal-contact-block">
+        <div class="k-label">Email</div>
+        <a class="email" href="mailto:futbolpurete@gmail.com">futbolpurete@gmail.com</a>
+      </div>
+      <p>We read every message, though as a small independent project we can't always promise a fast reply. See also our <button class="legal-link" type="button" data-screen="privacy">Privacy Policy</button>, <button class="legal-link" type="button" data-screen="cookies">Cookie Policy</button>, and <button class="legal-link" type="button" data-screen="terms">Terms of Use</button>.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ============ engine (verified against a standalone harness before shipping) ============ */
+
+  function mulberry32(a) {
+    return function () {
+      a |= 0; a = (a + 0x6D2B79F5) | 0;
+      let t = Math.imul(a ^ (a >>> 15), 1 | a);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+  function hashStr(s) {
+    let h = 2166136261;
+    for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); }
+    return h >>> 0;
+  }
+
+  const YOUR_CLUB = "Mereford Athletic";
+  // Your own club keeps "Mereford" as its constant identity, but wears that day's nation's
+  // naming convention — same town, same manager, different shirt — so it never sits out of
+  // place alongside an all-German or all-Spanish table.
+  const YOUR_CLUB_BY_NATION = {
+    English: "Mereford Athletic",
+    Spanish: "Real Mereford",
+    Italian: "US Mereford",
+    German: "SV Mereford",
+    French: "AS Mereford",
+    Portuguese: "GD Mereford",
+    Dutch: "VV Mereford",
+    Scandinavian: "IF Mereford",
+  };
+  // Clubs are grouped by footballing nation — every name in every group is fictional,
+  // built from generic club-naming conventions (Real/Atlético/Deportivo, Calcio/US/SS/Virtus,
+  // Borussia/FC/SV/TSV, Olympique/AS/Stade, Sporting/CF, FC/SC, IK/BK/IF/FK) paired with
+  // made-up place names, so nothing here copies a single real club. generateChallenge()
+  // picks ONE nation's pool for the whole of a given day's scenario — every other club
+  // that day (opponents, benchmark, every tracked relegation rival) comes from that same
+  // group, for realism, rather than mixing nationalities within one relegation battle.
+  const NATION_POOLS = {
+    English: ["Kirkstall Rovers","Dunmoor City","Eastgate Town","Harcombe United","Selby Wanderers",
+      "Longmoor Athletic","Brackfield Town","Ashworth City","Corvale Rovers","Netherfield United",
+      "Pallington Albion","Redcliffe FC","Stanmere Town","Wyvern Athletic","Oakbury United",
+      "Thornsea Rovers","Millgate City","Ferrowick Town","Greymoor Albion"],
+    Spanish: ["Real Almadena","Deportivo Vallara","Atlético Serrano","CD Montecielo","UD Praderas",
+      "Recreativo Alcores","Real Cabrales","Racing Solanas","CF Vallenoso","Deportivo Yesares",
+      "Atlético Brisamar","CD Peñaluz","Real Torrejosa","Unión Carrascal","CD Fuensalada"],
+    Italian: ["US Montefiore","SS Riomare","Virtus Salento","Calcio Palombara","AC Serrafina",
+      "ASD Campolieto","Polisportiva Vallecroce","US Castelbruno","Calcio Monteverna","SS Portovenza",
+      "Virtus Larderano","AC Fiumalta","ASD Roccalume","US Cerventino","Calcio Silvarena"],
+    German: ["Borussia Kelheim","FC Wiesenbach","SV Rottendorf","TSV Ahlingen","VfL Steinmoor",
+      "VfB Grünwalde","Eintracht Talheim","SC Nordfeld","1. FC Marienthal","Fortuna Birkendorf",
+      "Alemannia Hohenfeld","Viktoria Lindenau","FC Rabenstein","SV Eichwald","TSV Falkenburg"],
+    French: ["Olympique Vernais","AS Montcalvi","Stade Ferrand","FC Bellerive","US Cormeuil",
+      "RC Vallefleur","Stade Aubrenne","ES Chateaunoir","CS Brionnais","Olympique Laverne",
+      "AS Pierrefonds","FC Rocheval","US Montluchet","Stade Cavernaux","RC Fontenelle"],
+    Portuguese: ["Sporting Belmonte","Vitória Sarnedo","CF Alvarinho","GD Ribeiralta","União Campanário",
+      "SC Monteserra","Académico Ferradosa","Vitória Paivas","CF Sernande","GD Torreira",
+      "Sporting Vilaverde","União Marialva","SC Fragoselo"],
+    Dutch: ["FC Waalburg","SC Rijnmond","VV Duinzicht","FC Veldhorst","SC Maasveen",
+      "VV Zuiderpark","FC Kloosterhof","SC Bergendal","VV Oosterheide","FC Nieuwerkerk",
+      "SC Westvoort","VV Hooglanden","FC Drentheveld"],
+    Scandinavian: ["IK Solvik","BK Fjordheim","IF Nordbacken","FK Lysvollen","IK Ravnfjell",
+      "BK Kärrbo","IF Strandvik","FK Bjørkedal","IK Marbacken","BK Solstrand",
+      "IF Granåsen","FK Dalsjø","IK Vintervik"],
+  };
+  const NATIONS = Object.keys(NATION_POOLS);
+
+  const FORMATIONS = {
+    '4-3-3': { atk: 1.15, def: 0.90, tag: 'Attack-leaning', lines: [4,3,3] },
+    '4-4-2': { atk: 1.00, def: 1.00, tag: 'Balanced', lines: [4,4,2] },
+    '5-3-2': { atk: 0.85, def: 1.15, tag: 'Defence-leaning', lines: [5,3,2] },
+  };
+  const TACTICS = {
+    Attacking: { atk: 0.25, def: -0.15, sub: 'Higher risk, higher reward' },
+    Neutral: { atk: 0, def: 0, sub: 'The balanced default' },
+    Defensive: { atk: -0.15, def: 0.25, sub: 'Shape first, chances rationed' },
+  };
+  const STRENGTH = { 1: { atk: 0.75, def: 0.80, label: 'Weaker side' }, 2: { atk: 1.00, def: 1.00, label: 'Evenly matched' }, 3: { atk: 1.25, def: 1.20, label: 'Tough test' } };
+  const SUBS = {
+    attack: { label: 'Go attacking', d: 'atk', v: 0.10, tag: '+Attack' },
+    defend: { label: 'Shore it up', d: 'def', v: 0.10, tag: '+Defence' },
+    fresh: { label: 'Fresh legs', d: 'both', v: 0.05, tag: '+Stamina' },
+  };
+  // Tactic/sub changes are no longer tied to specific moments — the player opens the
+  // Tactics panel whenever they want (see openTactics()), so these are just the labels
+  // the minute badge cycles through as the match auto-advances.
+  const MOMENTS = [
+    { id: 'm15', label: "15'" },
+    { id: 'm30', label: "30'" },
+    { id: 'mht', label: 'Half time' },
+    { id: 'm65', label: "65'" },
+    { id: 'm80', label: "80'" },
+  ];
+
+  function kitHue(name) { return hashStr(name) % 360; }
+  function kitColor(name) { return 'hsl(' + kitHue(name) + ', 55%, 42%)'; }
+
+  function generateChallenge(dateStr) {
+    const seed = hashStr(dateStr);
+    const rng = mulberry32(seed);
+    const games = 4 + Math.floor(rng() * 3);
+    const gamesPlayedSoFar = 38 - games;
+    const ppgYou = 0.65 + rng() * 0.20;
+    const yourPoints = Math.round(gamesPlayedSoFar * ppgYou);
+    const maxPossible = games * 3;
+    const gapFrac = 0.15 + rng() * 0.20;
+    const rivalGap = Math.max(1, Math.round(maxPossible * gapFrac));
+    const benchmarkPoints = yourPoints + rivalGap;
+    const ppgRival = 0.35 + rng() * 0.20;
+
+    // One nation for the whole of today's scenario — every other club in the table
+    // (opponents, benchmark, every tracked rival) is drawn from the same group, and your
+    // own club takes that nation's naming style too, so a given day reads as one coherent
+    // league rather than a mix of nationalities.
+    const nation = NATIONS[Math.floor(rng() * NATIONS.length)];
+    const yourClub = YOUR_CLUB_BY_NATION[nation] || YOUR_CLUB;
+    const pool = NATION_POOLS[nation].slice();
+    const opponents = [];
+    for (let i = 0; i < games; i++) {
+      const idx = Math.floor(rng() * pool.length);
+      const club = pool.splice(idx, 1)[0];
+      const strength = 1 + Math.floor(rng() * 3);
+      opponents.push({ club, strength });
+    }
+    const benchmarkClub = pool.splice(Math.floor(rng() * pool.length), 1)[0];
+
+    // The rest of the table is 2-4 more clubs around you, so the tracked group is 4-6
+    // clubs wide and varies day to day instead of always being the same fixed cast.
+    // They're cosmetic context (only the benchmark rival above decides survival) but each
+    // still moves independently, game by game, on its own run of form.
+    const zoneCount = 2 + Math.floor(rng() * 3); // 2, 3, or 4 extra clubs
+    const zones = [];
+    for (let i = 0; i < zoneCount; i++) {
+      const zoneClub = pool.splice(Math.floor(rng() * pool.length), 1)[0];
+      const ppgZone = 0.30 + rng() * 0.25;
+      // Alternate the bias so the extra clubs spread on both sides of you, the same
+      // flavor as the old fixed above/below pairing, whatever the count today.
+      const startPts = (i % 2 === 0)
+        ? Math.max(0, yourPoints + Math.round(rng() * 4 - 2))
+        : Math.max(0, yourPoints - 2 - Math.round(rng() * 4));
+      zones.push({ club: zoneClub, startPoints: startPts, ppg: ppgZone });
+    }
+
+    return {
+      dateStr, seed, games, nation,
+      yourClub, startPoints: yourPoints,
+      opponents,
+      benchmark: { club: benchmarkClub, startPoints: benchmarkPoints, ppg: ppgRival },
+      zones,
+    };
+  }
+
+  function rivalRoll(rng, ppg) {
+    const pWin = Math.max(0.05, Math.min(0.7, ppg / 3 - 0.05));
+    const pDraw = 0.28;
+    const r = rng();
+    if (r < pWin) return 3;
+    if (r < pWin + pDraw) return 1;
+    return 0;
+  }
+
+  /* ============ persistence ============ */
+
+  const LS_KEY = 'dailyRelegation.v1';
+  function loadLS() { try { return JSON.parse(localStorage.getItem(LS_KEY) || '{}'); } catch (e) { return {}; } }
+  function saveLS(obj) { try { localStorage.setItem(LS_KEY, JSON.stringify(obj)); } catch (e) {} }
+
+  function todayKey() { const d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
+  function dayNumber(dateStr) {
+    const epoch = Date.UTC(2026, 8, 9);
+    const [y, m, d] = dateStr.split('-').map(Number);
+    const cur = Date.UTC(y, m - 1, d);
+    return Math.max(1, Math.round((cur - epoch) / 86400000) + 1);
+  }
+
+  /* ============ app state ============ */
+
+  const S = {
+    screen: 'home',
+    challenge: null,
+    gameIndex: 0,
+    yourPoints: 0, yourGamesLeft: 0,
+    benchPoints: 0, benchGamesLeft: 0,
+    zonePoints: [],
+    rivalRng: null, zoneRngs: [],
+    perGame: [],
+    formation: '4-4-2', tactic: 'Neutral',
+    subAtk: 0, subDef: 0, tacticSwitches: 0, subsUsed: 0,
+    scoreYou: 0, scoreOpp: 0,
+    momentIndex: 0, matchRng: null,
+    feedLog: [],
+    resultData: null,
+  };
+
+  function $(id) { return document.getElementById(id); }
+
+  /* ============ setup ============ */
+
+  function newRun(challenge) {
+    S.challenge = challenge;
+    S.gameIndex = 0;
+    S.yourPoints = challenge.startPoints; S.yourGamesLeft = challenge.games;
+    S.benchPoints = challenge.benchmark.startPoints; S.benchGamesLeft = challenge.games;
+    S.zonePoints = challenge.zones.map(z => z.startPoints);
+    S.rivalRng = mulberry32(challenge.seed ^ 0x1234567);
+    S.zoneRngs = challenge.zones.map((z, i) => mulberry32(challenge.seed ^ (0x2468ACE + i * 0x9E3779B1)));
+    S.perGame = [];
+  }
+
+  function renderClubStrip(justEarned) {
+    const el = $('clubStrip');
+    const c = S.challenge;
+    if (!c) { el.innerHTML = ''; return; }
+    // Day now lives next to the wordmark in the topbar instead of as a chip here —
+    // that's what leaves Club/Points/Games left room to sit on a single row below.
+    $('topDayBadge').textContent = 'Day #' + dayNumber(c.dateStr);
+    const deltaHtml = (justEarned) ? '<span class="delta show">+' + justEarned + '</span>' : '';
+    const finalBadge = isFinalDay() ? '<span class="final-badge">Final day</span>' : '';
+    el.innerHTML =
+      '<span class="chip"><span class="k">Club</span><strong><span class="kit-dot" style="background:' + kitColor(c.yourClub) + '"></span>' + c.yourClub + '</strong></span>' +
+      '<span class="chip"><span class="k">Points</span><strong>' + S.yourPoints + deltaHtml + '</strong></span>' +
+      '<span class="chip"><span class="k">Games left</span><strong>' + S.yourGamesLeft + '</strong></span>' +
+      finalBadge;
+  }
+
+  function zoneTableRows(rows) {
+    const sorted = rows.slice().sort((a, b) => b.pts - a.pts);
+    // The tracked group is always the bottom of a 20-club league table, so it always ends
+    // at position 20 whatever its size (4-6 clubs).
+    const startPos = 21 - sorted.length;
+    // Red "zone" shading always marks the true bottom 3 places (positions 18-20 of a
+    // 20-club league) — matching how a real relegation zone works — never anything wider.
+    // Survival itself is still decided purely by points vs. the benchmark rival (see the
+    // rules panel and finishMatch()'s safe/down check); this shading is cosmetic table
+    // flavor and never factors into that outcome, so a club can sit outside the shaded
+    // rows here and still finish below the rival, or vice versa.
+    let html = '<thead><tr><th>Pos</th><th>Club</th><th>Left</th><th>Pts</th></tr></thead><tbody>';
+    sorted.forEach((r, i) => {
+      const pos = startPos + i;
+      const inZone = i >= sorted.length - 3;
+      const classes = [inZone ? 'zone' : '', r.you ? 'you' : ''].filter(Boolean).join(' ');
+      const tag = r.you ? ' &mdash; you' : (r.bench ? ' &mdash; rival' : '');
+      html += '<tr' + (classes ? ' class="' + classes + '"' : '') + '><td class="pos">' + pos + '</td><td><span class="kit-dot" style="background:' + kitColor(r.club) + '"></span>' + r.club + tag + '</td><td>' + r.left + '</td><td>' + r.pts + '</td></tr>';
+    });
+    html += '</tbody>';
+    return html;
+  }
+
+  function currentTableRows() {
+    const c = S.challenge;
+    const rows = [
+      { club: c.yourClub, pts: S.yourPoints, left: S.yourGamesLeft, you: true },
+      { club: c.benchmark.club, pts: S.benchPoints, left: S.benchGamesLeft, bench: true },
+    ];
+    c.zones.forEach((z, i) => rows.push({ club: z.club, pts: S.zonePoints[i], left: S.benchGamesLeft }));
+    return rows;
+  }
+
+  /* ============ screens ============ */
+
+  const LEGAL_SCREENS = ['privacy', 'cookies', 'terms', 'contact'];
+
+  function showScreen(name) {
+    ['home', 'prematch', 'inplay', 'fulltime', 'result', 'survival-sunday', 'landing', ...LEGAL_SCREENS].forEach(n => { $('screen-' + n).hidden = (n !== name); });
+    // The Day/Club/Points/Games-left strip is redundant once a match is actually running
+    // (the scoreboard already covers score, and points/games-left don't change mid-match)
+    // — hiding it here is what actually frees up the scroll room, since it sits above
+    // every screen in normal document flow. Same idea for the legal/info screens and the
+    // landing page: that strip is league-table context with nothing to do with either.
+    $('clubStrip').hidden = (name === 'inplay' || name === 'landing' || LEGAL_SCREENS.includes(name));
+    if (LEGAL_SCREENS.includes(name) || name === 'landing') window.scrollTo(0, 0); else S.screen = name;
+    saveHot();
+  }
+
+  // True for the whole of the run's last game — reaching it always means the outcome is
+  // still mathematically open (finishMatch() would already have ended the run early
+  // otherwise), so every final game is a genuine "Survival Sunday" by construction.
+  function isFinalDay() {
+    return !!(S.challenge && S.challenge.games && S.gameIndex === S.challenge.games - 1);
+  }
+
+  /* ---- modal sheets: rules panel + in-play decision box share this open/close pattern.
+     Opening sets hidden=false, forces a synchronous layout flush (reading offsetHeight),
+     then adds .open — the flush makes the browser commit the pre-transition (off-screen)
+     state before the slide-up starts, so the transition always plays, with no async delay:
+     .open is true the instant openSheet() returns, which is what callers rely on to know
+     synchronously whether a sheet is open. Closing removes .open immediately (starting the
+     slide-down, so that "is it open" flips synchronously too) and defers hidden=true until
+     the transition has had time to finish, so the sheet stays visible while it animates out. */
+  // Per-sheet pending "finish closing" timers, keyed by element id — see closeSheet().
+  const sheetCloseTimers = {};
+  function anySheetOpen() {
+    return $('rulesPanel').classList.contains('open') || $('ledgerPanel').classList.contains('open') || $('ipDecision').classList.contains('open');
+  }
+  function openSheet(id) {
+    const box = $(id);
+    const scrim = $('sheetScrim');
+    // A decision can close and a new one open again in well under 340ms (e.g. two
+    // consecutive "Skip ahead" taps) — cancel any still-pending close from last time so
+    // it doesn't reach in later and hide the sheet out from under its fresh content.
+    if (sheetCloseTimers[id]) { clearTimeout(sheetCloseTimers[id]); sheetCloseTimers[id] = null; }
+    box.classList.remove('open');
+    box.hidden = false;
+    scrim.hidden = false;
+    void box.offsetHeight; // force layout flush — see comment above
+    box.classList.add('open');
+    scrim.classList.add('show');
+  }
+  function closeSheet(id) {
+    const box = $(id);
+    box.classList.remove('open');
+    $('sheetScrim').classList.remove('show');
+    if (sheetCloseTimers[id]) clearTimeout(sheetCloseTimers[id]);
+    sheetCloseTimers[id] = setTimeout(() => {
+      box.hidden = true;
+      // Only hide the shared scrim if nothing else has since opened behind this sheet's back.
+      if (!anySheetOpen()) $('sheetScrim').hidden = true;
+      sheetCloseTimers[id] = null;
+    }, 340);
+  }
+  function hideSheetImmediate(id) {
+    const box = $(id);
+    if (sheetCloseTimers[id]) { clearTimeout(sheetCloseTimers[id]); sheetCloseTimers[id] = null; }
+    box.classList.remove('open');
+    box.hidden = true;
+    $('sheetScrim').classList.remove('show');
+    if (!anySheetOpen()) $('sheetScrim').hidden = true;
+  }
+
+  function renderHome() {
+    const c = S.challenge;
+    const gap = S.benchPoints - S.yourPoints;
+    $('homeLede').textContent = c.yourClub + ' sit in the drop zone: ' + gap + ' point' + (gap === 1 ? '' : 's') + ' adrift of ' + c.benchmark.club + ' with ' + c.games + ' games of the season left to play.';
+    $('homeTable').innerHTML = zoneTableRows(currentTableRows());
+    renderClubStrip();
+    showScreen('home');
+  }
+
+  // First-visit (or "About") entry point — a pitch for the game itself, using today's
+  // real generated situation as the hook rather than made-up numbers. Playing either CTA
+  // just drops straight into the same renderHome() flow a returning player lands on.
+  function renderLanding() {
+    const c = S.challenge;
+    const gap = S.benchPoints - S.yourPoints;
+    $('landingDayBadge').textContent = 'Day #' + dayNumber(c.dateStr);
+    $('landingHook').textContent = 'Today, ' + c.yourClub + ' are ' + gap + ' point' + (gap === 1 ? '' : 's') + ' adrift of ' + c.benchmark.club + ' with ' + c.games + ' games left. Get the run-in right and you stay up. Get it wrong, and it is back down.';
+    showScreen('landing');
+  }
+
+  function renderPrematch() {
+    clearAutoTimer();
+    const c = S.challenge;
+    const opp = c.opponents[S.gameIndex];
+    S.formation = '4-4-2'; S.tactic = 'Neutral'; S.subAtk = 0; S.subDef = 0; S.tacticSwitches = 0; S.subsUsed = 0;
+    S.scoreYou = 0; S.scoreOpp = 0; S.momentIndex = 0; S.feedLog = [];
+    S.matchRng = mulberry32(c.seed ^ (0xA5A5A5A5 + S.gameIndex * 7919));
+    S._ballPos = null;
+    clearBallTimers();
+
+    $('pmTitle').textContent = 'Game ' + (S.gameIndex + 1) + ' of ' + c.games;
+    $('pmLede').innerHTML = 'Away to <strong>' + opp.club + '</strong> &mdash; ' + STRENGTH[opp.strength].label + '.';
+
+    $('pmTactics').innerHTML = Object.keys(TACTICS).map(t =>
+      '<button class="opt-btn tactic-opt' + (t === S.tactic ? ' selected' : '') + '" data-tactic="' + t + '"><span class="name">' + t + '</span><span class="sub">' + TACTICS[t].sub + '</span></button>'
+    ).join('');
+    $('pmFormations').innerHTML = Object.keys(FORMATIONS).map(f =>
+      '<button class="opt-btn form-opt' + (f === S.formation ? ' selected' : '') + '" data-formation="' + f + '"><span class="name">' + f + '</span><span class="sub">' + FORMATIONS[f].tag + '</span></button>'
+    ).join('');
+
+    $('pmTactics').querySelectorAll('.tactic-opt').forEach(b => b.addEventListener('click', () => {
+      S.tactic = b.getAttribute('data-tactic');
+      $('pmTactics').querySelectorAll('.tactic-opt').forEach(x => x.classList.toggle('selected', x === b));
+    }));
+    $('pmFormations').querySelectorAll('.form-opt').forEach(b => b.addEventListener('click', () => {
+      S.formation = b.getAttribute('data-formation');
+      $('pmFormations').querySelectorAll('.form-opt').forEach(x => x.classList.toggle('selected', x === b));
+      drawPitch();
+    }));
+
+    renderClubStrip();
+    showScreen('prematch');
+    drawPitch();
+  }
+
+  /* ---- pitch drawing ---- */
+
+  const ROLE_POS = {
+    '4-3-3': { DEF: [40,90,150,200], MID: [70,120,170], FWD: [60,120,180] },
+    '4-4-2': { DEF: [40,90,150,200], MID: [40,90,150,200], FWD: [90,150] },
+    '5-3-2': { DEF: [25,70,120,170,215], MID: [70,120,170], FWD: [90,150] },
+  };
+  const PITCH_CX = 120, PITCH_CY = 110;
+  let ballResetTimer = null, glowTimer = null;
+
+  function drawPitch() {
+    const svg = $('pitchSvg');
+    const f = ROLE_POS[S.formation] || ROLE_POS['4-4-2'];
+    let s = '';
+    s += '<rect x="4" y="4" width="232" height="212" rx="0" fill="none" stroke="var(--pitch-line)" stroke-width="2"/>';
+    s += '<line x1="4" y1="110" x2="236" y2="110" stroke="var(--pitch-line)" stroke-width="1.5"/>';
+    s += '<circle cx="120" cy="110" r="20" fill="none" stroke="var(--pitch-line)" stroke-width="1.5"/>';
+    s += '<rect x="55" y="4" width="130" height="36" fill="none" stroke="var(--pitch-line)" stroke-width="1.5"/>';
+    s += '<rect x="55" y="180" width="130" height="36" fill="none" stroke="var(--pitch-line)" stroke-width="1.5"/>';
+    // opponent (abstracted line near their goal, top)
+    const c = S.challenge, opp = c.opponents[S.gameIndex];
+    const oppXs = [50, 90, 130, 170, 210].slice(0, 5);
+    oppXs.forEach((x, i) => { s += '<circle class="pdot pdot-opp" style="animation-delay:' + (i * 0.13).toFixed(2) + 's" cx="' + x + '" cy="48" r="6" fill="' + kitColor(opp.club) + '" opacity="0.75"/>'; });
+    // your GK
+    s += '<circle class="pdot pdot-you" style="animation-delay:.4s" cx="120" cy="198" r="7" fill="var(--ink)" stroke="var(--bg)" stroke-width="1.5"/>';
+    function row(xs, y, color, baseDelay) { xs.forEach((x, i) => { s += '<circle class="pdot pdot-you" style="animation-delay:' + (baseDelay + i * 0.13).toFixed(2) + 's" cx="' + x + '" cy="' + y + '" r="7" fill="' + color + '" stroke="var(--bg)" stroke-width="1.5"/>'; }); }
+    row(f.DEF, 168, 'var(--role-def)', 0.05);
+    row(f.MID, 130, 'var(--role-mid)', 0.2);
+    row(f.FWD, 90, kitColor(c.yourClub), 0.35);
+    // ball + its glow ring, positioned wherever the last moment left it (defaults to centre spot)
+    const pos = S._ballPos || { x: PITCH_CX, y: PITCH_CY };
+    s += '<circle id="ballGlow" cx="' + pos.x + '" cy="' + pos.y + '" r="4" fill="var(--accent-bright)" opacity="0"/>';
+    s += '<circle id="ballDot" cx="' + pos.x + '" cy="' + pos.y + '" r="4.5" fill="var(--bg)" stroke="var(--ink)" stroke-width="1"/>';
+    svg.innerHTML = s;
+  }
+
+  function clearBallTimers() {
+    if (ballResetTimer) { clearTimeout(ballResetTimer); ballResetTimer = null; }
+    if (glowTimer) { clearTimeout(glowTimer); glowTimer = null; }
+    const top = $('glowTop'), bottom = $('glowBottom');
+    if (top) top.classList.remove('active');
+    if (bottom) bottom.classList.remove('active');
+  }
+
+  function jitterX(spread) { return PITCH_CX + Math.round((Math.random() - 0.5) * spread); }
+
+  function setBallPos(x, y) {
+    S._ballPos = { x: x, y: y };
+    const ball = $('ballDot'), glow = $('ballGlow');
+    if (ball) { ball.setAttribute('cx', x); ball.setAttribute('cy', y); }
+    if (glow) { glow.setAttribute('cx', x); glow.setAttribute('cy', y); }
+  }
+
+  function flashGlow(side) {
+    const top = $('glowTop'), bottom = $('glowBottom');
+    if (!top || !bottom) return;
+    if (glowTimer) clearTimeout(glowTimer);
+    top.classList.toggle('active', side === 'top');
+    bottom.classList.toggle('active', side === 'bottom');
+    glowTimer = setTimeout(() => { top.classList.remove('active'); bottom.classList.remove('active'); }, 700);
+  }
+
+  function pingBall() {
+    const glow = $('ballGlow');
+    if (!glow) return;
+    glow.classList.remove('ball-glow-ping');
+    void glow.offsetWidth;
+    glow.classList.add('ball-glow-ping');
+  }
+
+  // Purely cosmetic — never draws from S.matchRng, so the deterministic match
+  // outcome (and every player's identical daily result) is untouched by any of this.
+  function animateMoment(kind) {
+    if (ballResetTimer) { clearTimeout(ballResetTimer); ballResetTimer = null; }
+    if (kind === 'goal-you') {
+      setBallPos(jitterX(50), 20);
+      flashGlow('top');
+      pingBall();
+      ballResetTimer = setTimeout(() => setBallPos(PITCH_CX, PITCH_CY), 900);
+    } else if (kind === 'goal-opp') {
+      setBallPos(jitterX(50), 200);
+      flashGlow('bottom');
+      pingBall();
+      ballResetTimer = setTimeout(() => setBallPos(PITCH_CX, PITCH_CY), 900);
+    } else if (kind === 'chance-you') {
+      setBallPos(jitterX(70), 50);
+      flashGlow('top');
+      ballResetTimer = setTimeout(() => setBallPos(PITCH_CX, PITCH_CY), 850);
+    } else if (kind === 'chance-opp') {
+      setBallPos(jitterX(70), 170);
+      flashGlow('bottom');
+      ballResetTimer = setTimeout(() => setBallPos(PITCH_CX, PITCH_CY), 850);
+    } else {
+      setBallPos(jitterX(60), PITCH_CY + Math.round((Math.random() - 0.5) * 26));
+    }
+  }
+
+  /* ---- in-play ---- */
+
+  function startMatch() {
+    S._kickoffTactic = S.tactic;
+    showScreen('inplay');
+    $('ipVs').textContent = 'vs ' + S.challenge.opponents[S.gameIndex].club;
+    $('ipFeed').innerHTML = '';
+    hideSheetImmediate('ipDecision');
+    clearBallTimers();
+    updateScoreboard();
+    drawPitch();
+    updateTacticsButtonState();
+    pushFeed('KO', "Kick-off at " + S.challenge.opponents[S.gameIndex].club + '.', false);
+    scheduleAuto(1300);
+  }
+
+  function clearAutoTimer() { if (S._timer) { clearTimeout(S._timer); S._timer = null; } }
+
+  function scheduleAuto(delay) {
+    clearAutoTimer();
+    S._timer = setTimeout(autoAdvance, delay);
+  }
+
+  function autoAdvance() {
+    clearAutoTimer();
+    if (S.momentIndex >= MOMENTS.length) {
+      finishMatch();
+      return;
+    }
+    resolveMoment();
+    S.momentIndex++;
+    updateTacticsButtonState();
+    scheduleAuto(S.momentIndex >= MOMENTS.length ? 1400 : 2000);
+  }
+
+  // The Tactics button is the only way the tactics/subs sheet opens now — nothing
+  // auto-pops it any more. Opening it pauses the match outright (no pending auto-advance
+  // timer runs while it's up) so the player always has as long as they want to decide.
+  // Skip ahead is disabled for the same window — it drives autoAdvance() directly, which
+  // shouldn't fire while the tactics sheet is up and the match is meant to be paused.
+  function updateTacticsButtonState() {
+    const btn = $('ipTacticsBtn');
+    if (!btn) return;
+    const noMomentsLeft = S.momentIndex >= MOMENTS.length;
+    const noResourcesLeft = S.tacticSwitches >= 2 && S.subsUsed >= 5;
+    const sheetOpen = $('ipDecision').classList.contains('open');
+    btn.disabled = noMomentsLeft || noResourcesLeft || sheetOpen;
+    const skipBtn = $('ipSkipBtn');
+    if (skipBtn) skipBtn.disabled = sheetOpen;
+  }
+  function openTactics() {
+    if ($('ipTacticsBtn').disabled) return;
+    clearAutoTimer();
+    renderDecision();
+    updateTacticsButtonState();
+  }
+
+  function flashClass(el, cls) { el.classList.remove(cls); void el.offsetWidth; el.classList.add(cls); }
+  function pulseEl(el) { flashClass(el, 'pulse'); }
+
+  function nowMs() { return (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now(); }
+  const raf = (typeof requestAnimationFrame === 'function')
+    ? requestAnimationFrame
+    : function (cb) { return setTimeout(function () { cb(nowMs()); }, 16); };
+  function prefersReducedMotion() {
+    try { return !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches); } catch (e) { return false; }
+  }
+  function animateCount(el, to, duration) {
+    if (prefersReducedMotion() || !to) { el.textContent = to; return; }
+    const start = nowMs();
+    function step(t) {
+      const p = Math.min(1, (nowMs() - start) / duration);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(to * eased);
+      if (p < 1) raf(step); else el.textContent = to;
+    }
+    raf(step);
+  }
+
+  function updateScoreboard() {
+    const prevYou = $('ipScoreYou').textContent, prevOpp = $('ipScoreOpp').textContent;
+    $('ipScoreYou').textContent = S.scoreYou;
+    $('ipScoreOpp').textContent = S.scoreOpp;
+    if (String(S.scoreYou) !== prevYou) pulseEl($('ipScoreYou'));
+    if (String(S.scoreOpp) !== prevOpp) pulseEl($('ipScoreOpp'));
+    const badge = $('ipMinute');
+    const prevLabel = badge.textContent;
+    const m = MOMENTS[S.momentIndex];
+    badge.textContent = m ? m.label : 'Full time';
+    if (badge.textContent !== prevLabel) flashClass(badge, 'tick');
+  }
+
+  function pushFeed(minute, text, isGoal) {
+    const li = document.createElement('li');
+    if (isGoal) li.className = 'goal-line';
+    li.innerHTML = '<span class="m">' + minute + '</span><span class="' + (isGoal ? 'goal' : '') + '">' + text + '</span>';
+    // Newest event goes to the top of the feed, not the bottom, so the latest line is
+    // always the first thing visible without needing to scroll down to catch up.
+    const feed = $('ipFeed');
+    feed.insertBefore(li, feed.firstChild);
+    feed.scrollTop = 0;
+  }
+
+  const FLAVOR_NEUTRAL = ['Tempo settles, both sides probing.', 'Scrappy passage of play, nothing clean.', 'Territory but no real openings.', 'A stoppage for treatment holds things up.', 'Both keepers untested for a spell.', 'A booking breaks up the rhythm.'];
+  const FLAVOR_CHANCE_YOU = ['A half-chance drags just wide.', 'Great buildup, the final ball lets it down.', 'A speculative effort is well saved.', 'So close &mdash; off the post!'];
+  const FLAVOR_CHANCE_OPP = ['They break well but the final touch lets them down.', 'A scare at the back, cleared off the line.', 'A speculative long-range effort is comfortably held.', 'They go close from a corner.'];
+
+  function resolveMoment() {
+    const f = FORMATIONS[S.formation], t = TACTICS[S.tactic], opp = S.challenge.opponents[S.gameIndex], s = STRENGTH[opp.strength];
+    const attackYou = f.atk + t.atk + S.subAtk;
+    const defYou = f.def + t.def + S.subDef;
+    const attackOpp = s.atk, defOpp = s.def;
+    const C = 0.16;
+    const pYou = Math.max(0.04, Math.min(0.34, C * (attackYou / defOpp)));
+    const pOpp = Math.max(0.04, Math.min(0.34, C * (attackOpp / defYou)));
+    const r = S.matchRng();
+    const flavorR = S.matchRng();
+    const m = MOMENTS[S.momentIndex];
+    let kind = 'neutral';
+    if (r < pYou) {
+      S.scoreYou++;
+      pushFeed(m.label, 'GOAL! ' + S.challenge.yourClub + ' find the net.', true);
+      kind = 'goal-you';
+    } else if (r < pYou + pOpp) {
+      S.scoreOpp++;
+      pushFeed(m.label, 'GOAL for ' + opp.club + '.', true);
+      kind = 'goal-opp';
+    } else {
+      const isChanceYou = r < pYou + pOpp + 0.18;
+      const isChanceOpp = !isChanceYou && r < pYou + pOpp + 0.36;
+      const pool = isChanceYou ? FLAVOR_CHANCE_YOU : (isChanceOpp ? FLAVOR_CHANCE_OPP : FLAVOR_NEUTRAL);
+      const line = pool[Math.floor(flavorR * pool.length)];
+      pushFeed(m.label, line, false);
+      kind = isChanceYou ? 'chance-you' : (isChanceOpp ? 'chance-opp' : 'neutral');
+    }
+    updateScoreboard();
+    animateMoment(kind);
+  }
+
+  function renderDecision() {
+    const box = $('ipDecision');
+    const isFirstOpen = !box.classList.contains('open');
+    const staggerClass = isFirstOpen ? ' stagger-in' : '';
+    const tacticsLeft = 2 - S.tacticSwitches, subsLeft = 5 - S.subsUsed;
+    let html = '<div class="sheet-handle"></div>';
+    html += '<div class="dtitle">Tactics &mdash; ' + tacticsLeft + ' switch' + (tacticsLeft === 1 ? '' : 'es') + ' &middot; ' + subsLeft + ' sub' + (subsLeft === 1 ? '' : 's') + ' left</div>';
+    html += '<h4>Change tactic (currently ' + S.tactic + ')</h4><div class="btn-row" id="decTactics"></div>';
+    html += '<h4>Make a substitution</h4><div class="btn-row" id="decSubs"></div>';
+    box.innerHTML = html;
+    const dt = $('decTactics'), ds = $('decSubs');
+    Object.keys(TACTICS).forEach(t => {
+      const b = document.createElement('button');
+      b.className = 'opt-btn' + staggerClass + (t === S.tactic ? ' selected' : '');
+      b.innerHTML = '<span class="name">' + t + '</span>';
+      b.disabled = tacticsLeft <= 0 && t !== S.tactic;
+      b.addEventListener('click', () => {
+        if (t !== S.tactic && S.tacticSwitches < 2) { S.tactic = t; S.tacticSwitches++; }
+        renderDecision();
+      });
+      dt.appendChild(b);
+    });
+    Object.keys(SUBS).forEach(k => {
+      const sub = SUBS[k];
+      const b = document.createElement('button');
+      b.className = 'opt-btn' + staggerClass;
+      b.innerHTML = '<span class="name">' + sub.label + '</span><span class="sub">' + sub.tag + '</span>';
+      b.disabled = subsLeft <= 0;
+      b.addEventListener('click', () => {
+        if (S.subsUsed >= 5) return;
+        if (sub.d === 'atk') S.subAtk += sub.v;
+        else if (sub.d === 'def') S.subDef += sub.v;
+        else { S.subAtk += sub.v; S.subDef += sub.v; }
+        S.subsUsed++;
+        pushFeed($('ipMinute').textContent, 'Substitution made: ' + sub.label + '.', false);
+        renderDecision();
+      });
+      ds.appendChild(b);
+    });
+
+    const contBtn = document.createElement('button');
+    contBtn.className = 'primary-btn';
+    contBtn.type = 'button';
+    contBtn.style.marginTop = '10px';
+    contBtn.textContent = (S.momentIndex >= MOMENTS.length) ? 'See full time' : 'Resume match';
+    contBtn.addEventListener('click', () => {
+      closeSheet('ipDecision');
+      updateTacticsButtonState();
+      scheduleAuto(700);
+    });
+    box.appendChild(contBtn);
+
+    if (isFirstOpen) openSheet('ipDecision');
+  }
+
+  function finishMatch() {
+    let pts = 0, res = 'D';
+    if (S.scoreYou > S.scoreOpp) { pts = 3; res = 'W'; } else if (S.scoreYou < S.scoreOpp) { pts = 0; res = 'L'; }
+    S.yourPoints += pts; S.yourGamesLeft--;
+    const rivalPts = rivalRoll(S.rivalRng, S.challenge.benchmark.ppg);
+    S.benchPoints += rivalPts; S.benchGamesLeft--;
+    S.challenge.zones.forEach((z, i) => { S.zonePoints[i] += rivalRoll(S.zoneRngs[i], z.ppg); });
+    S.perGame.push({ res, scoreYou: S.scoreYou, scoreOpp: S.scoreOpp, opp: S.challenge.opponents[S.gameIndex].club, tactic: S._kickoffTactic });
+
+    const safe = S.yourPoints > S.benchPoints + 3 * S.benchGamesLeft;
+    const down = S.yourPoints + 3 * S.yourGamesLeft < S.benchPoints;
+    let ended = null;
+    if (safe) ended = 'SAFE';
+    else if (down) ended = 'DOWN';
+    else if (S.yourGamesLeft === 0) ended = (S.yourPoints >= S.benchPoints) ? 'SAFE' : 'DOWN';
+
+    renderFulltime(res, ended, pts);
+  }
+
+  function renderFulltime(res, ended, pts) {
+    const c = S.challenge, opp = c.opponents[S.gameIndex];
+    // Normal (breakable) spaces around the club names, but a non-breaking gap inside the
+    // score itself — so a narrow screen wraps cleanly between a club name and the score
+    // block rather than splitting "3 – 1" across two lines.
+    $('ftScore').innerHTML = c.yourClub + ' <strong>' + S.scoreYou + '&nbsp;&ndash;&nbsp;' + S.scoreOpp + '</strong> ' + opp.club;
+    const resWord = res === 'W' ? 'Win' : res === 'D' ? 'Draw' : 'Loss';
+    $('ftSummary').textContent = resWord + '. ' + c.yourClub + ' now on ' + S.yourPoints + ' points, ' + S.yourGamesLeft + ' game' + (S.yourGamesLeft === 1 ? '' : 's') + ' left.';
+    $('ftTable').innerHTML = zoneTableRows(currentTableRows());
+    renderClubStrip(pts);
+
+    $('ftContinueBtn').textContent = ended ? 'See the result' : 'Next game';
+    $('ftContinueBtn').onclick = () => {
+      if (ended) { finishRun(ended); }
+      else {
+        S.gameIndex++;
+        if (isFinalDay()) { renderSurvivalSunday(); } else { renderPrematch(); }
+      }
+    };
+    showScreen('fulltime');
+  }
+
+  function renderSurvivalSunday() {
+    const c = S.challenge;
+    const gap = S.benchPoints - S.yourPoints; // positive = rival currently ahead
+    let lede;
+    if (gap > 0) {
+      lede = 'One match left for both sides. ' + c.yourClub + ' need to make up ' + gap + ' point' + (gap === 1 ? '' : 's') + ' on ' + c.benchmark.club + ' &mdash; win, and it is in your own hands.';
+    } else if (gap < 0) {
+      lede = 'One match left for both sides. ' + c.yourClub + ' hold a ' + Math.abs(gap) + '-point cushion over ' + c.benchmark.club + ' &mdash; but nothing is confirmed until the final whistle.';
+    } else {
+      lede = 'Level on points, one match left for both sides. Whoever does better today survives.';
+    }
+    $('survivalLede').innerHTML = lede;
+    // Whichever club currently sits lower in the table (fewer points) goes on the
+    // bottom row here, same as it would in the standings — not "you" by default.
+    const youAhead = S.yourPoints >= S.benchPoints;
+    const top = youAhead ? { name: c.yourClub, pts: S.yourPoints, you: true } : { name: c.benchmark.club, pts: S.benchPoints, you: false };
+    const bottom = youAhead ? { name: c.benchmark.club, pts: S.benchPoints, you: false } : { name: c.yourClub, pts: S.yourPoints, you: true };
+    $('survivalTopName').textContent = top.name + (top.you ? ' — you' : '');
+    $('survivalTopPts').textContent = top.pts;
+    $('survivalBottomName').textContent = bottom.name + (bottom.you ? ' — you' : '');
+    $('survivalBottomPts').textContent = bottom.pts;
+    renderClubStrip();
+    showScreen('survival-sunday');
+  }
+
+  /* ---- result / stats / share ---- */
+
+  function finishRun(outcome) {
+    const key = todayKey();
+    const store = loadLS();
+    if (!store.stats) store.stats = { played: 0, survived: 0, relegated: 0, currentStreak: 0, bestStreak: 0 };
+    if (!store.ledger) store.ledger = { greatEscape: null, bestRun: null, longestUnbeaten: null, tactics: {} };
+    const alreadyCounted = store.lastPlayedDate === key;
+    if (!alreadyCounted) {
+      store.stats.played++;
+      if (outcome === 'SAFE') { store.stats.survived++; store.stats.currentStreak++; store.stats.bestStreak = Math.max(store.stats.bestStreak, store.stats.currentStreak); }
+      else { store.stats.relegated++; store.stats.currentStreak = 0; }
+      store.lastPlayedDate = key;
+
+      // ---- Manager's Ledger: career records, updated once per completed run ----
+      const day = dayNumber(S.challenge.dateStr);
+      const startGap = S.challenge.benchmark.startPoints - S.challenge.startPoints;
+      if (outcome === 'SAFE' && startGap > 0 && (!store.ledger.greatEscape || startGap > store.ledger.greatEscape.gap)) {
+        store.ledger.greatEscape = { gap: startGap, day };
+      }
+      const runPoints = S.yourPoints - S.challenge.startPoints;
+      if (!store.ledger.bestRun || runPoints > store.ledger.bestRun.points) {
+        store.ledger.bestRun = { points: runPoints, day };
+      }
+      let bestStreakRun = 0, curStreakRun = 0;
+      S.perGame.forEach(g => {
+        if (g.res !== 'L') { curStreakRun++; bestStreakRun = Math.max(bestStreakRun, curStreakRun); } else { curStreakRun = 0; }
+        if (g.tactic) store.ledger.tactics[g.tactic] = (store.ledger.tactics[g.tactic] || 0) + 1;
+      });
+      if (!store.ledger.longestUnbeaten || bestStreakRun > store.ledger.longestUnbeaten.games) {
+        store.ledger.longestUnbeaten = { games: bestStreakRun, day };
+      }
+    }
+    const resultData = {
+      dateStr: S.challenge.dateStr, outcome, yourPoints: S.yourPoints, benchPoints: S.benchPoints,
+      benchClub: S.challenge.benchmark.club, perGame: S.perGame, stats: store.stats,
+    };
+    store.lastResult = resultData;
+    saveLS(store);
+    S.resultData = resultData;
+    renderResult(resultData);
+  }
+
+  function emojiForRes(r) { return r === 'W' ? '🟩' : r === 'D' ? '🟨' : '🟥'; }
+
+  function buildShareText(data) {
+    const day = dayNumber(data.dateStr);
+    const margin = data.outcome === 'SAFE' ? (data.yourPoints - data.benchPoints) + ' clear of ' + data.benchClub : (data.benchPoints - data.yourPoints) + ' short of ' + data.benchClub;
+    const strip = data.perGame.map(g => emojiForRes(g.res)).join(' ');
+    const badge = data.outcome === 'SAFE' ? '🟢 SURVIVED' : '🔴 RELEGATED';
+    let url = '';
+    try { url = window.location.href.split('#')[0]; } catch (e) {}
+    return 'THE RUN IN #' + day + '\n' + badge + ' — ' + data.yourPoints + ' pts, ' + margin + '\n' + strip + ' (' + data.perGame.length + ' games)' + (url ? '\n' + url : '');
+  }
+
+  function renderResult(data) {
+    const safe = data.outcome === 'SAFE';
+    $('outcomeHeadline').className = 'big outcome-heading ' + (safe ? 'safe' : 'down');
+    $('outcomeHeadline').textContent = safe ? 'Survived' : 'Relegated';
+    const marginText = safe
+      ? 'Finished ' + (data.yourPoints - data.benchPoints) + ' point' + ((data.yourPoints - data.benchPoints) === 1 ? '' : 's') + ' clear of ' + data.benchClub + '.'
+      : 'Fell ' + (data.benchPoints - data.yourPoints) + ' point' + ((data.benchPoints - data.yourPoints) === 1 ? '' : 's') + ' short of ' + data.benchClub + '.';
+    $('outcomeSub').textContent = marginText;
+
+    // ---- share card: the visual, screenshot-worthy version of the same result ----
+    $('scDay').textContent = 'Day #' + dayNumber(data.dateStr);
+    $('shareCard').className = 'share-card ' + (safe ? 'safe' : 'down');
+    $('scBadge').className = 'share-card-badge ' + (safe ? 'safe' : 'down');
+    $('scBadge').textContent = safe ? 'Survived' : 'Relegated';
+    $('scKitDot').style.background = kitColor(S.challenge.yourClub);
+    $('scClub').textContent = S.challenge.yourClub;
+    $('scPts').textContent = data.yourPoints;
+    $('scMargin').textContent = safe
+      ? (data.yourPoints - data.benchPoints) + ' clear of ' + data.benchClub
+      : (data.benchPoints - data.yourPoints) + ' short of ' + data.benchClub;
+    $('scStrip').textContent = data.perGame.map(g => emojiForRes(g.res)).join(' ');
+
+    const st = data.stats;
+    $('statRow').innerHTML =
+      '<div class="stat-pill"><span class="n" data-final="' + st.played + '">0</span><span class="l">Played</span></div>' +
+      '<div class="stat-pill"><span class="n" data-final="' + st.survived + '">0</span><span class="l">Survived</span></div>' +
+      '<div class="stat-pill"><span class="n" data-final="' + st.relegated + '">0</span><span class="l">Relegated</span></div>' +
+      '<div class="stat-pill"><span class="n" data-final="' + st.currentStreak + '">0</span><span class="l">Streak</span></div>' +
+      '<div class="stat-pill"><span class="n" data-final="' + st.bestStreak + '">0</span><span class="l">Best streak</span></div>';
+    $('statRow').querySelectorAll('.n').forEach((el, i) => {
+      const final = parseInt(el.getAttribute('data-final'), 10) || 0;
+      setTimeout(() => animateCount(el, final, 650), i * 60);
+    });
+
+    const shareText = buildShareText(data);
+    $('shareText').textContent = shareText;
+    $('comeBackNote').textContent = 'Today’s run is locked in — a new situation lands tomorrow.';
+    $('copyFallback').hidden = true;
+    $('shareToast').textContent = '';
+    $('shareBtn').onclick = () => doShare(shareText);
+    showScreen('result');
+  }
+
+  function doShare(text) {
+    if (navigator.share) {
+      navigator.share({ title: 'The Run In', text: text }).catch(() => fallbackCopy(text));
+      return;
+    }
+    fallbackCopy(text);
+  }
+  function fallbackCopy(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(() => {
+        $('shareToast').textContent = 'Copied to clipboard.';
+      }).catch(() => showManualCopy(text));
+    } else {
+      showManualCopy(text);
+    }
+  }
+  function showManualCopy(text) {
+    const ta = $('copyFallback');
+    ta.hidden = false; ta.value = text; ta.focus(); ta.select();
+    $('shareToast').textContent = 'Select the text above to copy it.';
+  }
+
+  /* ---- manager's ledger: cross-day career records, read straight from localStorage
+     (not from S — the whole point is it survives past a single run, across days) ---- */
+
+  function renderLedger() {
+    const store = loadLS();
+    const st = store.stats || { played: 0, survived: 0, relegated: 0, currentStreak: 0, bestStreak: 0 };
+    $('ledgerCareerStats').innerHTML =
+      '<div class="stat-pill"><span class="n">' + st.played + '</span><span class="l">Played</span></div>' +
+      '<div class="stat-pill"><span class="n">' + st.survived + '</span><span class="l">Survived</span></div>' +
+      '<div class="stat-pill"><span class="n">' + st.relegated + '</span><span class="l">Relegated</span></div>' +
+      '<div class="stat-pill"><span class="n">' + st.bestStreak + '</span><span class="l">Best streak</span></div>';
+
+    const ledger = store.ledger || {};
+    const records = [];
+
+    if (ledger.greatEscape) {
+      records.push({ k: 'Great escape', v: ledger.greatEscape.gap + '-point gap overturned', d: 'Day #' + ledger.greatEscape.day });
+    } else {
+      records.push({ k: 'Great escape', v: 'Not yet recorded', empty: true });
+    }
+    if (ledger.bestRun) {
+      const pts = ledger.bestRun.points;
+      records.push({ k: 'Best run', v: pts + ' point' + (pts === 1 ? '' : 's') + ' earned', d: 'Day #' + ledger.bestRun.day });
+    } else {
+      records.push({ k: 'Best run', v: 'Not yet recorded', empty: true });
+    }
+    if (ledger.longestUnbeaten && ledger.longestUnbeaten.games > 0) {
+      const g = ledger.longestUnbeaten.games;
+      records.push({ k: 'Longest unbeaten run', v: g + ' game' + (g === 1 ? '' : 's') + ' unbeaten', d: 'Day #' + ledger.longestUnbeaten.day });
+    } else {
+      records.push({ k: 'Longest unbeaten run', v: 'Not yet recorded', empty: true });
+    }
+    const tacticEntries = Object.keys(ledger.tactics || {});
+    if (tacticEntries.length) {
+      let best = tacticEntries[0];
+      tacticEntries.forEach(t => { if (ledger.tactics[t] > ledger.tactics[best]) best = t; });
+      const games = ledger.tactics[best];
+      records.push({ k: 'Favourite tactic', v: best, d: games + ' game' + (games === 1 ? '' : 's') + ' kicked off this way' });
+    } else {
+      records.push({ k: 'Favourite tactic', v: 'Not yet recorded', empty: true });
+    }
+
+    $('ledgerRecords').innerHTML = records.map(r =>
+      '<div class="ledger-record"><div class="rk">' + r.k + '</div><div class="rv' + (r.empty ? ' empty' : '') + '">' + r.v + '</div>' +
+      (r.d ? '<div class="rd">' + r.d + '</div>' : '') + '</div>'
+    ).join('');
+  }
+
+  /* ============ hot state (survive a republish while a viewer is mid-run) ============ */
+
+  function saveHot() {
+    try {
+      if (!window.claude || !window.claude.hot) return;
+      window.claude.hot.snapshot(() => ({ S: JSON.parse(JSON.stringify(S)) }));
+    } catch (e) {}
+  }
+
+  /* ============ boot ============ */
+
+  // Testing-only helper: wipes today's saved result/stats and boots a fresh run,
+  // so a run can be replayed repeatedly without waiting for the date to change.
+  function resetForTesting() {
+    clearAutoTimer();
+    clearBallTimers();
+    try { localStorage.removeItem(LS_KEY); } catch (e) {}
+    const challenge = generateChallenge(todayKey());
+    newRun(challenge);
+    S.screen = 'home';
+    S.resultData = null;
+    renderHome();
+  }
+
+  function init(bootData) {
+    $('rulesToggle').addEventListener('click', () => {
+      if ($('rulesPanel').hidden) openSheet('rulesPanel'); else closeSheet('rulesPanel');
+    });
+    $('ledgerToggle').addEventListener('click', () => {
+      if ($('ledgerPanel').hidden) { renderLedger(); openSheet('ledgerPanel'); } else closeSheet('ledgerPanel');
+    });
+    $('sheetScrim').addEventListener('click', () => {
+      // The decision sheet is deliberately not dismissible this way — it always needs an
+      // explicit "Continue match" tap so a game moment can't be skipped by accident.
+      if (!$('rulesPanel').hidden) closeSheet('rulesPanel');
+      if (!$('ledgerPanel').hidden) closeSheet('ledgerPanel');
+    });
+    $('resetTestBtn').addEventListener('click', resetForTesting);
+    $('startRunBtn').addEventListener('click', () => renderPrematch());
+    $('kickoffBtn').addEventListener('click', () => startMatch());
+    $('ipSkipBtn').addEventListener('click', () => { clearAutoTimer(); autoAdvance(); });
+    $('ipTacticsBtn').addEventListener('click', openTactics);
+    $('survivalContinueBtn').addEventListener('click', () => renderPrematch());
+
+    // Legal/info screens (privacy, cookies, terms, contact): footer nav on the home
+    // screen plus inline cross-links within the legal text itself all share this one
+    // handler — every one of them just carries which screen it should open.
+    document.querySelectorAll('.legal-link[data-screen]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        // "About" needs its hook text re-rendered against the current challenge every
+        // time (a returning player opening it mid-session never ran the first-visit
+        // boot path that normally populates it) — every other target is static content.
+        if (btn.dataset.screen === 'landing') renderLanding(); else showScreen(btn.dataset.screen);
+      });
+    });
+    document.querySelectorAll('.legal-back').forEach(btn => {
+      btn.addEventListener('click', () => showScreen('home'));
+    });
+    const enterGameFromLanding = () => {
+      // Recorded the moment someone actually leaves the landing screen (not only once
+      // they finish a run) so refreshing mid-run never sends a first-time visitor back
+      // to the pitch a second time.
+      const store = loadLS();
+      store.seenLanding = true;
+      saveLS(store);
+      renderHome();
+    };
+    $('landingPlayBtn').addEventListener('click', enterGameFromLanding);
+    $('landingPlayBtnBottom').addEventListener('click', enterGameFromLanding);
+
+    if (bootData && bootData.S && bootData.S.challenge) {
+      Object.assign(S, bootData.S);
+      S.matchRng = null; S.rivalRng = null; S.zoneRngs = [];
+      if (S.screen === 'result' && S.resultData) { renderResult(S.resultData); return; }
+      renderHome();
+      return;
+    }
+
+    const store = loadLS();
+    const key = todayKey();
+    // A genuinely first-ever visit (nothing at all in local storage yet) gets the
+    // landing/pitch screen instead of dropping straight into "today's situation" —
+    // every later visit, same day or not, goes straight to the usual home/result flow.
+    const isFirstVisit = !store.stats && !store.lastPlayedDate && !store.ledger && !store.seenLanding;
+    if (store.lastPlayedDate === key && store.lastResult) {
+      const challenge = generateChallenge(key);
+      newRun(challenge);
+      renderResult(store.lastResult);
+      return;
+    }
+    const challenge = generateChallenge(key);
+    newRun(challenge);
+    if (isFirstVisit) renderLanding(); else renderHome();
+  }
+
+  if (window.claude && window.claude.hot && window.claude.hot.ready) {
+    window.claude.hot.ready(() => init(window.claude.hot.data));
+  } else {
+    init((window.claude && window.claude.hot && window.claude.hot.data) || {});
+  }
+})();
+</script>
+
+</body>
+</html>
